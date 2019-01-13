@@ -1,34 +1,3 @@
-body {
-  box-sizing: border-box;
-  margin:0;
-  padding: 0;
-}
 
-.header {
-  background-color: #ffffff;
-}
 
-.steps {
-  background-color: #eeffff;
-}
-
-h1 {
-  text-align: center;
-  color:#ffffff;
-  font-size: 50px;
-}
-
-h2 {
-  text-align: center;
-}
-.parrallax {
-  position: relative;
-  background-image: url("https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?cs=srgb&dl=ai-artificial-intelligence-blur-546819.jpg&fm=jpg");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 800px;
-  width: 100%;
-  opacity: 0.3;
-}
+/*# sourceMappingURL=homeStyle.css.map */
