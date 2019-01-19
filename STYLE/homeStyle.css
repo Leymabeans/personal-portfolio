@@ -6,13 +6,25 @@
 }
 
 
+
+
 /*Header*/
-.header {
-  
+.call {
+  margin-left: 12px;
+  margin-top: 8px;
+}
+
+.schedule {
+  padding: 9px;
+  border: 1px solid #F7882f;
+  border-radius: 6px;
+  background-color: #ffffff;
+  color: #F7882f;
 }
 
 
 
+/*Parrallax*/
 .parrallax {
   background-image: url("../MISC/jumbotron.jpg");
   height: 700px;
@@ -20,5 +32,20 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
+  text-align: center;
+  
 }
 
+.name {
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  color: white;
+  font-size: 60px;
+}
+
+/*Step Process */
+.steps {
+  background-color: #F7882f;
+}
