@@ -1,4 +1,4 @@
-/* Changing default styling*/
+/* Changing default styling==========*/
 * {
   box-sizing: border-box;
   margin: 0;
@@ -8,28 +8,50 @@
 .grid-container {
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
+  justify-content: center;
+  align-content: center;
 }
 
 
-/*Header*/
+
+
+
+/*Header=============================*/
+#number {
+  float: right;
+  margin: 0;
+}
+
 .call {
   grid-column: 1 / 2;
+  text-align: center;
+  margin: 5px;
+  align-content: center;
 }
 
-
-
 .schedule {
-  grid-column: 3 / 5;
+  grid-column: 4 / 5;
   padding: 9px;
   border: 1px solid #F7882f;
   border-radius: 11px;
   background-color: #ffffff;
   color: #F7882f;
+  margin: 5px;
+}
+
+.schedule:hover {
+  background-color: #F7882f;
+  color: #ffffff;
+  transition: 0.4s;
+  cursor: pointer;
 }
 
 
 
-/*Parrallax*/
+
+
+
+/*Parrallax=========================*/
 .parrallax {
   background-image: url("../MISC/jumbotron.jpg");
   height: 700px;
@@ -39,7 +61,6 @@
   background-size: cover;
   position: relative;
   text-align: center;
-  
 }
 
 .name {
@@ -50,8 +71,34 @@
   font-size: 60px;
 }
 
-/*Step Process */
+
+
+
+
+
+
+/*Step Process=====================*/
+#goal {
+  text-align: center;
+  display: block;
+  padding: 50px;
+  margin: auto;
+}
+
 .steps {
   background-color: #dcc7aa;
 }
 
+.step1 {
+  grid-column: 1 / 2;
+}
+
+.step2 {
+  grid-column: 2 / 3;
+}
+.step3 {
+  grid-column: 3 / 4;
+}
+.step4 {
+  grid-column: 4 / 5;
+}
