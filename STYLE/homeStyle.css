@@ -5,19 +5,24 @@
   padding: 0;
 }
 
-
+.grid-container {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+}
 
 
 /*Header*/
 .call {
-  margin-left: 12px;
-  margin-top: 8px;
+  grid-column: 1 / 2;
 }
 
+
+
 .schedule {
+  grid-column: 3 / 5;
   padding: 9px;
   border: 1px solid #F7882f;
-  border-radius: 6px;
+  border-radius: 11px;
   background-color: #ffffff;
   color: #F7882f;
 }
@@ -47,5 +52,6 @@
 
 /*Step Process */
 .steps {
-  background-color: #F7882f;
+  background-color: #dcc7aa;
 }
+
