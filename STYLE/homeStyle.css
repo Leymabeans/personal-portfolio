@@ -13,11 +13,6 @@
   align-content: center;
 }
 
-.heading {
-  color: #ffffff;
-
-}
-
 
 
 /*Header=============================*/
@@ -70,8 +65,8 @@
   position: absolute;
   text-align: center;
   grid-column: 1 / 5;
-  top: 50%;
-  left: 50%;
+  top: 40%;
+  left: 40%;
   font-size: 70px;
   font-weight: 800;
   color: white;
@@ -80,7 +75,21 @@
 
 
 /*Biography========================*/
+.biosection {
+  background-color: #687a8f;
+  grid-column: 1 / 5;
+}
 
+.biography {
+  background-color: #ffffff;
+  grid-column: 1 / 5;
+  width: 70%;
+  max-width: 700px;
+  margin: 60px auto;
+  padding: 50px;
+  border: 1px solid #000000;
+  border-radius: 9px;
+}
 
 
 /*Step Process=====================*/
