@@ -17,6 +17,7 @@
 
 /*Header=============================*/
 #number {
+  font-size: 16px;
   float: right;
 }
 
@@ -59,6 +60,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  border-radius: 3px;
 }
 
 .name {
@@ -76,8 +78,10 @@
 
 /*Biography========================*/
 .biosection {
-  background-color: #687a8f;
+  background-color: #F7882f;
+  border-radius: 3px;
   grid-column: 1 / 5;
+  font-size: 17px;
 }
 
 .biography {
@@ -87,23 +91,25 @@
   max-width: 700px;
   margin: 60px auto;
   padding: 50px;
-  border: 1px solid #000000;
+  border: none;
   border-radius: 9px;
 }
 
 
 /*Step Process=====================*/
-#goal {
-  text-align: center;
-  display: block;
-  grid-column: 1 / 5;
-  padding: 50px;
-  margin: auto;
+.steps {
+  border-radius: 3px;
+  grid-column: 1 /5;
 }
 
-.steps {
-  background-color: #dcc7aa;
-  grid-column: 1 /5;
+
+#goal {
+  grid-column: 1 / 5;
+  text-align: center;
+  display: block;
+  font-weight: 600;
+  padding: 50px;
+  margin: auto;
 }
 
 .step1 {
