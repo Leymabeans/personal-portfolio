@@ -60,7 +60,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  border-radius: 3px;
 }
 
 .name {
@@ -88,12 +87,19 @@
 .biography {
   background-color: #ffffff;
   grid-column: 1 / 5;
+  font-size: 18px;
   width: 70%;
   max-width: 700px;
   margin: 60px auto;
   padding: 50px;
   border: none;
   border-radius: 9px;
+}
+
+div.biography > p {
+  font-size: 18px;
+  line-height: 1.8em;
+  text-indent: 30px;
 }
 
 .biopic {
@@ -111,6 +117,7 @@
   border-radius: 3px;
   grid-column: 1 /5;
   margin: auto;
+  min-width: 500px;
 }
 
 
@@ -124,18 +131,16 @@
 }
 
 .steps {
-  position: relative;
-  top: 0;
   grid-column: 1 / 5;
   margin-bottom: 25%;
-  opacity: 1;
+  opacity: 0.8;
 }
 
 .steps:hover {
   cursor: pointer;
-  top: -10px;
-  transition: top ease 0.7s;
-  opacity: 0.8;
+  transition: all 0.7s;
+  transform: scale(1.2);
+  opacity: 1;
 }
 
 img {
