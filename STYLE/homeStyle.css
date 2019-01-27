@@ -13,6 +13,12 @@
   align-content: center;
 }
 
+.grid-container2 {
+  display: grid;
+  grid-template-columns: 16.66% 16.66% 16.66% 16.66% 16.66% 16.66%; 
+  justify-content: center;
+  align-content: center;
+}
 
 
 /*Header=============================*/
@@ -75,7 +81,7 @@
 
 
 
-/*Biography========================*/
+/*Biography=========================*/
 .biosection {
   background-color: #F7882f;
   position: relative;
@@ -138,8 +144,8 @@ div.biography > p {
 
 .steps:hover {
   cursor: pointer;
-  transition: all 0.7s;
-  transform: scale(1.2);
+  transition: all 1.4s;
+  transform: scale(1.1);
   opacity: 1;
 }
 
@@ -153,4 +159,48 @@ h3 {
 
 p {
   font-size: 14px;
+}
+
+
+/*Language Stack==================*/
+.grid-container2 > p {
+  margin: 0;
+  padding: 10px;
+  border-radius: 10px;
+  opacity: 1;
+}
+
+.grid-container2 > p:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+#html {
+  grid-column: 1 / 2;
+  background-color: hsl(28, 100%, 40%);
+}
+
+#css {
+  grid-column: 2 / 3;
+  background-color: hsl(28, 100%, 50%);
+}
+
+#js {
+  grid-column: 3 / 4;
+  background-color: hsl(28, 100%, 60%);
+}
+
+#php {
+  grid-column: 4 / 5;
+  background-color: hsl(28, 100%, 70%);
+}
+
+#sql {
+  grid-column: 5 / 6;
+  background-color: hsl(28, 100%, 80%);
+}
+
+#py {
+  grid-column: 6 / 7;
+  background-color: hsl(28, 100%, 90%);
 }
