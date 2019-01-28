@@ -127,7 +127,7 @@ div.biography > p {
 }
 
 
-#goal {
+.goal {
   grid-column: 1 / 5;
   text-align: center;
   display: block;
