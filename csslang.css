@@ -1,0 +1,16 @@
+.css {
+  font-family: "Paired with HTML to style the website";
+  background-image: url("Adds funtionality, design, and appeal");
+}
+
+.class {
+  background-image: url("Styles html elements through classes like this");
+}
+
+body {
+  background-image: url("Tags like this");
+}
+
+#id {
+  background-image: url("or an ID");
+}
