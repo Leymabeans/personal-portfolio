@@ -163,16 +163,22 @@ p {
 
 
 /*Language Stack==================*/
-.grid-container2 > p {
+.grid-container2 > button {
   margin: 0;
   padding: 10px;
   border-radius: 10px;
   opacity: 1;
 }
 
-.grid-container2 > p:hover {
+.grid-container2 > button:hover {
   cursor: pointer;
   opacity: 0.8;
+}
+
+#languagepic {
+  background-color: #000000;
+  grid-column: 1 / 7;
+
 }
 
 #html {
@@ -203,4 +209,22 @@ p {
 #py {
   grid-column: 6 / 7;
   background-color: hsl(28, 100%, 90%);
+}
+
+
+
+
+/*Client Review===================*/
+.review1 {
+  grid-column: 2 / 4;
+  padding: 40px;
+  border: 1px solid #000000;
+  border-radius: 50%;
+}
+
+.review2 {
+  grid-column: 4 / 7;
+  padding: 40px;
+  border: 1px solid #000000;
+  border-radius: 50%;
 }
