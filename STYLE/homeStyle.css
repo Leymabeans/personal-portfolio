@@ -20,6 +20,17 @@
   align-content: center;
 }
 
+.grid-container2 > div {
+  text-align: center;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  margin: 1px;
+  
+}
+
+
+
 
 /*Header=============================*/
 #number {
@@ -61,11 +72,13 @@
   background-image: url("../MISC/jumbotron.jpg");
   grid-column: 1 / 5;
   height: 750px;
+  filter: blur(3px);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  border-top: 2px solid #f9f9f9;
 }
 
 .name {
@@ -78,6 +91,7 @@
   font-weight: 800;
   color: white;
 }
+
 
 
 
@@ -118,6 +132,9 @@ div.biography > p {
 }
 
 
+
+
+
 /*Step Process=====================*/
 .container {
   border-radius: 3px;
@@ -131,7 +148,8 @@ div.biography > p {
   grid-column: 1 / 5;
   text-align: center;
   display: block;
-  font-weight: 600;
+  font-weight: 700;
+  font-size: 40px;
   padding: 50px;
   margin: auto;
 }
@@ -139,14 +157,15 @@ div.biography > p {
 .steps {
   grid-column: 1 / 5;
   margin-bottom: 25%;
+  width: 100%;
   opacity: 0.8;
+  transition: transform 2s, opacity 1s;
 }
 
 .steps:hover {
   cursor: pointer;
-  transition: all 1.4s;
-  transform: scale(1.1);
   opacity: 1;
+  transform: scale(1.2);
 }
 
 img {
@@ -155,6 +174,7 @@ img {
 
 h3 {
   color: #141313;
+  font-weight: 700;
 }
 
 p {
@@ -162,54 +182,60 @@ p {
 }
 
 
+
+
+
 /*Language Stack==================*/
-.grid-container2 > button {
-  margin: 0;
-  padding: 10px;
-  border-radius: 10px;
-  opacity: 1;
+.tooltip {
+  position: relative;
+  display: inline-block;
 }
 
-.grid-container2 > button:hover {
-  cursor: pointer;
-  opacity: 0.8;
+.tooltip .tooltiptext {
+  visibility: hidden;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
 }
 
-#languagepic {
-  background-color: #000000;
-  grid-column: 1 / 7;
-
+.tooltip:hover .tooltiptext{
+  visibility: visible;
 }
 
-#html {
+.html {
   grid-column: 1 / 2;
   background-color: hsl(28, 100%, 40%);
 }
 
-#css {
+.css {
   grid-column: 2 / 3;
   background-color: hsl(28, 100%, 50%);
 }
 
-#js {
+.js {
   grid-column: 3 / 4;
   background-color: hsl(28, 100%, 60%);
 }
 
-#php {
+.php {
   grid-column: 4 / 5;
   background-color: hsl(28, 100%, 70%);
 }
 
-#sql {
+.sql {
   grid-column: 5 / 6;
   background-color: hsl(28, 100%, 80%);
 }
 
-#py {
+.py {
   grid-column: 6 / 7;
   background-color: hsl(28, 100%, 90%);
 }
+
 
 
 
@@ -223,8 +249,17 @@ p {
 }
 
 .review2 {
-  grid-column: 4 / 7;
+  grid-column: 4 / 6;
   padding: 40px;
   border: 1px solid #000000;
   border-radius: 50%;
 }
+
+.review3 {
+  grid-column: 1 / 4;
+  padding: 40px;
+  border: 1px solid #000000;
+  border-radius: 50%;
+}
+
+
