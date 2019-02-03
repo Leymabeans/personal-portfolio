@@ -11,6 +11,8 @@
   grid-template-columns: 25% 25% 25% 25%;
   justify-content: center;
   align-content: center;
+  background-color: #080c16;
+  color: #ffffff;
 }
 
 .grid-container2 {
@@ -33,37 +35,32 @@
 
 
 /*Header=============================*/
-#number {
-  font-size: 16px;
-  float: right;
-}
-
-.call {
-  grid-column: 1 / 2;
-  text-align: center;
-  margin: 5px;
-  align-content: center;
-}
-
-.schedule {
-  grid-column: 4 / 5;
-  padding: 9px;
-  border: 1px solid #F7882f;
-  border-radius: 11px;
-  background-color: #ffffff;
-  color: #F7882f;
-  margin: 5px;
-}
-
-.schedule:hover {
-  background-color: #F7882f;
+nav > a {
+  padding: 30px;
   color: #ffffff;
-  transition: 0.4s;
-  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+}
+.home {
+  grid-column: 1 / 2;
+  background-color: #f5f5f5;
+  color: #000000;
 }
 
+.about {
+  grid-column: 2 / 3;
+  background-color: #0f1626;
+}
 
+.portfolio {
+  grid-column: 3 / 4;
+  background-color: #ab987a;
+}
 
+.contact {
+  grid-column: 4 / 5;
+  background-color: #ff533d;
+}
 
 
 
@@ -72,13 +69,17 @@
   background-image: url("../MISC/jumbotron.jpg");
   grid-column: 1 / 5;
   height: 750px;
-  filter: blur(3px);
+  filter: brightness(0.1);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  border-top: 2px solid #f9f9f9;
+  transition: filter 2s;
+}
+
+.parrallax:hover {
+  filter: brightness(1);
 }
 
 .name {
@@ -87,60 +88,18 @@
   grid-column: 1 / 5;
   top: 40%;
   left: 40%;
-  font-size: 70px;
-  font-weight: 800;
+  font-size: 30px;
   color: white;
 }
 
 
 
 
-/*Biography=========================*/
-.biosection {
-  background-color: #F7882f;
-  position: relative;
-  border-radius: 3px;
-  grid-column: 1 / 5;
-  font-size: 17px;
-}
-
-.biography {
-  background-color: #ffffff;
-  grid-column: 1 / 5;
-  font-size: 18px;
-  width: 70%;
-  max-width: 700px;
-  margin: 60px auto;
-  padding: 50px;
-  border: none;
-  border-radius: 9px;
-}
-
-div.biography > p {
-  font-size: 18px;
-  line-height: 1.8em;
-  text-indent: 30px;
-}
-
-.biopic {
-  float: right;
-  width: 200px;
-  height: 180px;
-  border-radius: 50%;
-  opacity: 1;
-  margin: 20px;
-}
-
-
-
-
-
 /*Step Process=====================*/
 .container {
-  border-radius: 3px;
   grid-column: 1 /5;
   margin: auto;
-  min-width: 500px;
+  min-width: 600px;
 }
 
 
@@ -173,7 +132,6 @@ img {
 }
 
 h3 {
-  color: #141313;
   font-weight: 700;
 }
 
@@ -235,6 +193,46 @@ p {
   grid-column: 6 / 7;
   background-color: hsl(28, 100%, 90%);
 }
+
+
+
+
+/*Biography=========================*/
+.biosection {
+  background-color: #F7882f;
+  position: relative;
+  border-radius: 3px;
+  grid-column: 1 / 5;
+  font-size: 17px;
+}
+
+.biography {
+  background-color: #ffffff;
+  grid-column: 1 / 5;
+  font-size: 18px;
+  width: 70%;
+  max-width: 700px;
+  margin: 60px auto;
+  padding: 50px;
+  border: none;
+  border-radius: 9px;
+}
+
+div.biography > p {
+  font-size: 18px;
+  line-height: 1.8em;
+  text-indent: 30px;
+}
+
+.biopic {
+  float: right;
+  width: 200px;
+  height: 180px;
+  border-radius: 50%;
+  opacity: 1;
+  margin: 20px;
+}
+
 
 
 
