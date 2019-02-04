@@ -11,8 +11,8 @@
   grid-template-columns: 25% 25% 25% 25%;
   justify-content: center;
   align-content: center;
-  background-color: #080c16;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #ab987a;
 }
 
 .grid-container2 {
@@ -58,7 +58,7 @@ nav > a {
   background-color: #ab987a;
 }
 
-.contact {
+.blog {
   grid-column: 4 / 5;
   background-color: #ff533d;
 }
@@ -225,7 +225,8 @@ p {
 
 /*Biography=========================*/
 .biosection {
-  background-color: #F7882f;
+  background-color: #0f1626;
+  color: #ffffff;
   position: relative;
   border-radius: 3px;
   grid-column: 1 / 5;
@@ -233,7 +234,6 @@ p {
 }
 
 .biography {
-  background-color: #ffffff;
   grid-column: 1 / 5;
   font-size: 18px;
   width: 70%;
@@ -260,7 +260,10 @@ div.biography > p {
 }
 
 
-
+h2 {
+  font-weight: 400;
+  color: #ab987a;
+}
 
 
 
