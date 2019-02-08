@@ -44,13 +44,13 @@ nav > a {
 }
 .home {
   grid-column: 1 / 2;
-  background-color: #f5f5f5;
-  color: #000000;
+  background-color: #0f1626;
 }
 
 .about {
   grid-column: 2 / 3;
-  background-color: #0f1626;
+  background-color: #f5f5f5;
+  color: #000000;
 }
 
 .portfolio {
@@ -225,8 +225,8 @@ p {
 
 /*Biography=========================*/
 .biosection {
-  background-color: #0f1626;
-  color: #ffffff;
+  background-color: #f5f5f5;
+  color: #0f1626 ;
   position: relative;
   border-radius: 3px;
   grid-column: 1 / 5;
