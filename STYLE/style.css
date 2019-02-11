@@ -6,6 +6,11 @@
   font-family: 'Open Sans', sans-serif;
 }
 
+::-webkit-scrollbar {
+  width: 0px;  
+  background: transparent;  
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
@@ -268,25 +273,39 @@ h2 {
 
 
 /*Client Review===================*/
-.review1 {
-  grid-column: 2 / 4;
+.review {
+  margin: 30px;
   padding: 40px;
   border: 1px solid #000000;
   border-radius: 50%;
+  text-align: center;
+  background-color: #ffffff;
+  color: #0f1626;
+}
+.review1 {
+  grid-column: 2 / 5;
 }
 
 .review2 {
-  grid-column: 4 / 6;
-  padding: 40px;
-  border: 1px solid #000000;
-  border-radius: 50%;
+  grid-column: 3 / 6;
 }
 
 .review3 {
   grid-column: 1 / 4;
-  padding: 40px;
-  border: 1px solid #000000;
-  border-radius: 50%;
 }
 
+div.grid-container2 > h1 {
+  margin-top: 50px;
+  text-align: center;
+  grid-column: 1 / 7;
+  color: #ffffff;
+  font-weight: 700;
+}
 
+div.grid-container2 > h4 {
+  margin-bottom: 30px;
+  text-align: center;
+  grid-column: 2 / 6;
+  color: #ffffff;
+  font-weight: 400;
+}
