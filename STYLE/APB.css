@@ -1,0 +1,174 @@
+/* Changing default styling==========*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 0px;  
+  background: transparent;  
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  justify-content: center;
+  align-content: center;
+  background-color: #ffffff;
+  color: #ab987a;
+}
+
+.grid-container2 {
+  display: grid;
+  grid-template-columns: 16.66% 16.66% 16.66% 16.66% 16.66% 16.66%; 
+  justify-content: center;
+  align-content: center;
+  background-color: #ab987a;
+  color: #ffffff;
+}
+
+.grid-container2 > div {
+  text-align: center;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  margin: 1px;
+}
+
+
+/*Header=============================*/
+nav > a {
+  padding: 30px;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+}
+.home {
+  grid-column: 1 / 2;
+  background-color: #0f1626;
+}
+
+.about {
+  grid-column: 2 / 3;
+  background-color: #f5f5f5;
+  color: #000000;
+}
+
+.portfolio {
+  grid-column: 3 / 4;
+  background-color: #ab987a;
+}
+
+.blog {
+  grid-column: 4 / 5;
+  background-color: #ff533d;
+}
+
+
+
+/*About=========================*/
+.biosection {
+  background-color: #f5f5f5;
+  color: #0f1626 ;
+  position: relative;
+  border-radius: 3px;
+  grid-column: 1 / 5;
+  font-size: 17px;
+}
+
+.biography {
+  grid-column: 1 / 5;
+  font-size: 18px;
+  width: 70%;
+  max-width: 700px;
+  margin: 60px auto;
+  padding: 50px;
+  border: none;
+  border-radius: 9px;
+}
+
+div.biography > p {
+  font-size: 16px;
+  line-height: 1.8em;
+  text-indent: 30px;
+}
+
+.biopic {
+  float: right;
+  width: 200px;
+  height: 180px;
+  border-radius: 50%;
+  opacity: 1;
+  margin: 20px;
+}
+
+
+h2 {
+  font-weight: 400;
+  color: #ab987a;
+}
+
+
+
+/*Client Review===================*/
+.review {
+  margin: 30px;
+  padding: 50px;
+  border-radius: 50%;
+  text-align: center;
+  background-color: #ffffff;
+  color: #0f1626;
+}
+
+.review > p {
+  font-size: 16px;
+}
+
+.review1 {
+  grid-column: 2 / 5;
+}
+
+.review2 {
+  grid-column: 3 / 6;
+}
+
+.review3 {
+  grid-column: 1 / 4;
+}
+
+div.grid-container2 > h1 {
+  margin-top: 50px;
+  text-align: center;
+  grid-column: 1 / 7;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+div.grid-container2 > h4 {
+  margin-bottom: 30px;
+  text-align: center;
+  grid-column: 2 / 6;
+  color: #ffffff;
+  font-weight: 400;
+}
+
+a > img {
+  width: 100%;
+  margin: 10px 5px;
+  opacity: 0.5;
+}
+
+a > img:hover {
+  opacity: 0.9;
+}
+
+.blog {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  position: relative;
+}
