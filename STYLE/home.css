@@ -98,6 +98,22 @@ nav > a {
   color: white;
 }
 
+button {
+  outline: none;
+  background-color: #ab987a;
+  color: #ffffff;
+  padding: 20px;
+  border: none;
+  border-radius: 15px;
+  margin: 5px auto;
+  transition: opacity 1s, transform 1s;
+}
+
+button:hover {
+  cursor: pointer;
+  opacity: 0.9;
+  transform: scale(1.1);
+}
 
 
 
@@ -223,4 +239,27 @@ p {
 .py {
   grid-column: 6 / 7;
   background-color: hsl(7, 100%, 52%);
+}
+
+
+
+/*Footer============*/
+footer {
+  background-color: #0f1626;
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  height: 150px;
+}
+
+footer > span:before {
+  content: ' \00A9'
+}
+
+ a > i {
+  margin: 20px 50px;
+}
+
+i.fab {
+  color: #ffffff;
 }
