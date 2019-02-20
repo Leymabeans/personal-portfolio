@@ -39,7 +39,7 @@
 
 .grid-container3 {
   display: grid;
-  grid-template-columns: 45% 45%;
+  grid-template-columns: 1fr 1fr;
   justify-content: space-evenly;
   align-content: center;
   background-color: #ff533d;
@@ -170,27 +170,44 @@ div.grid-container2 > h4 {
 
 /*Blog======================*/
 img {
+  position: relative;
+  filter: brightness(0.5);
   border-radius: 10px;
+  width: 100%;
+  height: 250px;
   margin: 20px auto;
+  transition: transform 1s;
+}
+
+button {
+  position: absolute;
+  font-size: 17px;
+  background-color: transparent;
+  color: #ffffff;
+  padding: 10px;
+  border: 2px solid #ffffff;
+  border-radius: 6px;
+}
+
+.read1 {
+  top: 25%;
+  left: 17%;
+}
+
+.read2 {
+  top: 50%;
+  left: 85%;
 }
 
 .blog1 {
   grid-column: 1 / 2;
-  width: 100%;
-  transition: transform 1s;
 }
 
 .blog2 {
   grid-column: 2 / 3;
-  width: 100%;
-  transition: transform 1s;
 }
 
-.blog1:hover {
-  transform: scale(1.05);
-}
-
-.blog2:hover {
+.blog1:hover, .blog2:hover {
   transform: scale(1.05);
 }
 
