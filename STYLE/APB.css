@@ -39,9 +39,11 @@
 
 .grid-container3 {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 100%;
   justify-content: space-evenly;
   align-content: center;
+  text-align: center;
+  height: auto;
   background-color: #ff533d;
 }
 
@@ -169,15 +171,22 @@ div.grid-container2 > h4 {
 
 
 /*Blog======================*/
+.blog-title {
+  font-size: 22px;
+  color: #ffffff;
+  margin: 30px 0 5px 0;
+}
+
 img {
   position: relative;
-  filter: brightness(0.5);
+  filter: brightness(0.6);
+  grid-column: 1 / 2;
   border-radius: 10px;
-  width: 100%;
+  width: 65%;
   height: 250px;
-  margin: 20px auto;
-  transition: transform 1s;
+  margin: 0 auto 10px auto;
 }
+
 
 button {
   position: absolute;
@@ -189,27 +198,21 @@ button {
   border-radius: 6px;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
 .read1 {
-  top: 25%;
-  left: 17%;
+  top: 33%;
+  left: 45%;
 }
 
 .read2 {
-  top: 50%;
-  left: 85%;
+  top: 76%;
+  left: 45%;
 }
 
-.blog1 {
-  grid-column: 1 / 2;
-}
 
-.blog2 {
-  grid-column: 2 / 3;
-}
-
-.blog1:hover, .blog2:hover {
-  transform: scale(1.05);
-}
 
 
 /*Footer============*/
