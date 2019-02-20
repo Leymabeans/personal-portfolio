@@ -3,8 +3,62 @@
   margin: 0;
   padding: 0;
   text-align: center;
+  line-height: 2.0;
+  font-family: "Open Sans", sans-serif;
 }
 
-h1 {
-  text-align: center;
+h2, h3, h4 {
+  color: #AB987A;
+}
+
+
+button {
+  background-color: #FF533D;
+  color: #ffffff;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  margin: 10px auto;
+  transition: transform 1s;
+}
+
+
+button:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+button:focus {
+  opacity: 0.9;
+  outline: none !important;
+}
+
+div {
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+  background-color: #0f1626;
+  position: relative;
+  animation-name: error;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;  
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes error {
+  0%   {background-color:#FF533D; left:30%; top:100px;}
+  25%  {background-color:#AB987A; left:70%; top:100px;}
+  50%  {background-color:#FF533D; left:70%; top:400px;}
+  75%  {background-color:#AB987A; left:30%; top:400px;}
+  100% {background-color:#FF533D; left:30%; top:100px;}
+}
+
+/* Standard syntax */
+@keyframes error {
+  0%   {background-color:#FF533D; left:30%; top:100px;}
+  25%  {background-color:#AB987A; left:70%; top:100px;}
+  50%  {background-color:#FF533D; left:70%; top:400px;}
+  75%  {background-color:#AB987A; left:30%; top:400px;}
+  100% {background-color:#FF533D; left:30%; top:100px;}
 }
