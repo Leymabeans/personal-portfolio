@@ -4,7 +4,7 @@
   $host = "localhost";
   $username = "root";
   $password = "root";
-  $database = "personal";
+  $database = "z_personal";
   $db = mysqli_connect($host, $username, $password, $database) or die('Error connecting to MySQL server');
 
   //2 Check connection
@@ -17,11 +17,23 @@
     $firstname = $_POST["firstname"];
     $lastname = $_POST["lastname"];
     $email = $_POST["email"];
-    $message = $_POST["message"];
+    $message = $_POST["message"]; 
   } 
 
   //4 Take all information from the personal database
-  $query = "SELECT * FROM messengerInfo";
+  $query = "SELECT * FROM senderInfo";
+  mysqli_query($db, $query) or die("Error querying database");
+
+
+  //5 Insert information into phpmyadmin
+  $sql = "INSERT INTO senderInfo VALUES ('index', $_POST[firstname], $_POST[lastname], $_POST[email], $_POST[message]";
+  if (!mysqli_query($db, $sql)) {
+    echo 'Error: Could not execute $sql ' .mysqli_error($db);
+  }
+
+  //6 Close connection to MySQL database
+  mysqli_close($db);
+
 ?>
 
 <!--Meta Data======================================================= -->
@@ -33,7 +45,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../MISC/title.ico">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800" rel="stylesheet">
-    <link href="../STYLE/home.css" rel="stylesheet" type="text/css">
+    <link href="../STYLE/contact.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   </head>
 
