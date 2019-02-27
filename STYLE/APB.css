@@ -127,6 +127,8 @@ h2 {
 
 /*Client Review===================*/
 .review {
+  width: 90%;
+  max-width: 400px;
   margin: 30px;
   padding: 50px;
   border-radius: 50%;
