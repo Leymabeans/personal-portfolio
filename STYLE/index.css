@@ -13,28 +13,21 @@
 
 .grid-container {
   display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
-  justify-content: center;
-  align-content: center;
-  background-color: #ffffff;
-  color: #ab987a;
-}
-
-.grid-container2 {
-  display: grid;
-  grid-template-columns: 16.66% 16.66% 16.66% 16.66% 16.66% 16.66%; 
+  grid-template-columns: 1fr 1fr 1fr;
   justify-content: center;
   align-content: center;
   background-color: #ab987a;
   color: #ffffff;
 }
 
-.grid-container2 > div {
-  text-align: center;
-  padding: 10px;
-  border: none;
-  border-radius: 10px;
-  margin: 1px;
+.grid-container2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+  justify-content: center;
+  align-content: center;
+  background-color: #ffffff;
+  color: #ab987a;
+  margin: auto;
 }
 
 
@@ -58,13 +51,8 @@ nav > a {
   color: #000000;
 }
 
-.portfolio {
-  grid-column: 3 / 4;
-  background-color: #ab987a;
-}
-
 .blog {
-  grid-column: 4 / 5;
+  grid-column: 3 / 4;
   background-color: #ff533d;
 }
 
@@ -118,15 +106,8 @@ button:hover {
 
 
 /*Step Process=====================*/
-.container {
-  grid-column: 1 /5;
-  margin: auto;
-  min-width: 600px;
-}
-
-
 .section-header {
-  grid-column: 1 / 5;
+  grid-column: 1 / 6;
   text-align: center;
   display: block;
   font-weight: 700;
@@ -136,8 +117,9 @@ button:hover {
 }
 
 .steps {
-  grid-column: 1 / 5;
+  grid-column: 2 / 5;
   margin-bottom: 25%;
+  margin-left: 100px;
   width: 100%;
   opacity: 0.8;
   transition: transform 2s, opacity 1s;
@@ -162,85 +144,131 @@ p {
 }
 
 
+/*Portfolio==========*/
+.grid-container > h1 {
+  padding: 10px;
+  margin: 0 auto;
+}
 
-
-
-/*Language Stack==================*/
-.section-header2 {
-  grid-column: 1 / 7;
+h4 {
+  grid-column: 1 / 6;
   text-align: center;
   display: block;
   font-weight: 700;
-  font-size: 40px;
-  padding: 70px;
-  margin: 50px auto 20px auto;
+  font-size: 25px;
+  margin: auto;
+  margin-bottom: 90px;
 }
 
-.tooltip {
+.client, i {
+  color: #ff533d;
+}
+
+.review {
+  text-align: justify;
+  padding: 17px;
+  border: 1px solid #ff533d;
+  border-radius: 10px;
+  margin: 5px;
+}
+
+.review1 {
+  grid-column: 1 / 2;
+}
+
+.review2 {
+  grid-column: 2 / 3;
+}
+
+.review3 {
+  grid-column: 3 / 4;
+}
+
+
+
+/*About=============*/
+.biosection {
+  background-color: #f5f5f5;
+  color: #0f1626 ;
   position: relative;
-  display: inline-block;
+  border-radius: 3px;
+  grid-column: 1 / 5;
+  font-size: 17px;
 }
 
-.tooltip .tooltiptext {
-  visibility: hidden;
-  background-color: #0f1626;
-  color: #fff;
+.biography {
+  grid-column: 1 / 5;
+  font-size: 18px;
+  width: 70%;
+  max-width: 700px;
+  margin: 60px auto;
+  padding: 50px;
+  border: none;
+  border-radius: 9px;
+}
+
+div.biography > p {
+  font-size: 16px;
+  line-height: 1.8em;
+  text-indent: 30px;
+}
+
+.biopic {
+  float: right;
+  width: 230px;
+  height: 250px;
+  border-radius: 50%;
+  opacity: 1;
+  margin: 20px;
+  transform: rotate(90deg);
+}
+
+
+h2 {
+  font-weight: 400;
+  color: #ab987a;
+}
+
+
+
+/*Blog======================*/
+#blog-page {
+  background-color: #ff533d;
+  color: #ffffff;
+}
+
+.blog-title {
+  font-weight: 400;
+  font-size: 19px;
   text-align: center;
-  padding: 5px ;
-  border-radius: 6px;
-  position: absolute;
-  z-index: 1;
-  width: 120px;
-  bottom: 100%;
-  left: 50%; 
-  margin-left: -60px;
+  width: 250px;
+  height: 70px;
+  margin: 10px;
 }
 
-.tooltip:hover .tooltiptext{
-  visibility: visible;
+.article1 {
+  grid-column: 1 / 2;
 }
 
-.tooltip .tooltiptext::after {
-  content: " ";
-  position: absolute;
-  top: 100%; /* At the bottom of the tooltip */
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: #0f1626 transparent transparent transparent;
+.article2 {
+  grid-column: 2 / 3;  
 }
 
-.html {
-  grid-column: 1 / 3;
-  background-color: hsl(7, 100%, 62%);
+.image {
+  filter: brightness(0.6);
+  border-radius: 10px;
+  width: 250px;
+  height: 200px;
+  margin: 10px;
 }
 
-.css {
-  grid-column: 2 / 4;
-  background-color: hsl(7, 100%, 60%);
-}
 
-.js {
-  grid-column: 3 / 5;
-  background-color: hsl(7, 100%, 58%);
-}
 
-.php {
-  grid-column: 4 / 6;
-  background-color: hsl(7, 100%, 56%);
-}
-
-.sql {
-  grid-column: 5 / 7;
-  background-color: hsl(7, 100%, 54%);
-}
-
+/*Footer============*/
 #footerspace {
   margin-bottom: 50px;
 }
 
-/*Footer============*/
 footer {
   background-color: #0f1626;
   color: #ffffff;
