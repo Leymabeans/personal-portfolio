@@ -13,7 +13,7 @@
   }
 
   //3 Take inputed information
-  if ($SERVER["REQUEST_METHOD"] == "POST"){
+  if ($_SERVER["REQUEST_METHOD"] == "POST"){
     $firstname = $_POST["firstname"];
     $lastname = $_POST["lastname"];
     $email = $_POST["email"];
@@ -21,12 +21,12 @@
   } 
 
   //4 Take all information from the personal database
-  $query = "SELECT * FROM senderInfo";
+  $query = "SELECT * FROM senderinfo";
   mysqli_query($db, $query) or die("Error querying database");
 
 
   //5 Insert information into phpmyadmin
-  $sql = "INSERT INTO senderInfo VALUES ('index', $_POST[firstname], $_POST[lastname], $_POST[email], $_POST[message]";
+  $sql = "INSERT INTO senderinfo VALUES ('null', $firstname, $lastname, $email, $message";
   if (!mysqli_query($db, $sql)) {
     echo 'Error: Could not execute $sql ' .mysqli_error($db);
   }
