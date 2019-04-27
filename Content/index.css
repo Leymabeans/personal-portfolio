@@ -1,0 +1,214 @@
+/* Changing default styling==========*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  background-color: #ab987a;
+}
+
+::-webkit-scrollbar {
+  width: 0px;  
+  background: transparent;  
+}
+
+
+
+
+
+/*Parrallax=========================*/
+.parrallax {
+  background-image: url("../miscellaneous/jumbotron.jpg");
+  height: 110vh;
+  filter: brightness(0.09);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  transition: filter 1.6s;
+}
+
+.parrallax:hover {
+  filter: brightness(0.5);
+}
+
+.intro {
+  position: absolute;
+  text-align: center;
+  width: 80%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.name {
+  font-size: 80px;
+}
+
+button {
+  outline: none;
+  background-color: #ab987a;
+  color: #ffffff;
+  padding: 20px;
+  border: none;
+  border-radius: 15px;
+  margin: 5px auto;
+  transition: opacity 1s, transform 1s;
+}
+
+button:hover {
+  cursor: pointer;
+  opacity: 0.9;
+  transform: scale(1.1);
+}
+
+
+
+/*Step Process=====================*/
+.container {
+  background-color: #ffffff;
+  color: #ab987a;
+  width: 100%;
+}
+
+.section-header {
+  text-align: center;
+  display: block;
+  font-weight: 700;
+  font-size: 40px;
+  padding: 50px;
+  margin: 0px auto;
+}
+
+.steps {
+  opacity: 0.8;
+  width: 80%;
+  text-align: center;
+  padding: 80px 0px;
+  margin: auto;
+  transition: transform 0.9s, opacity 0.3s;
+}
+
+.steps:hover {
+  cursor: pointer;
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+.steps p {
+  font-size: 16px;
+}
+
+.steps img {
+  float: left;
+  width: 70px;
+  height: 70px;
+  border-radius: 2px;
+  margin-right: 20px;
+}
+
+.steps h3 {
+  font-weight: 700;
+}
+
+
+
+
+/*About====================*/
+.biosection {
+  background-color: #f5f5f5;
+  color: #0f1626;
+}
+
+.biography {
+  font-size: 17px;
+  width: 70%;
+  max-width: 700px;
+  margin: auto;
+  padding: 60px 50px;
+}
+
+.biography > p {
+  line-height: 1.9em;
+  text-indent: 30px;
+  margin-bottom: 50px;
+}
+
+.biopic{
+  float: right;
+  width: 400px;
+  height: 420px;
+  border-radius: 50%;
+  opacity: 1;
+  margin: 20px;
+  transform: rotate(90deg);
+}
+
+.biography h2 {
+  font-weight: 400;
+  color: #ab987a;
+}
+
+
+
+/*Portfolio=====================*/
+.title {
+  color: #ffffff;
+}
+
+.project {
+  width: 70%;
+}
+
+.item {
+  float: left;
+  width: 140px;
+  height: 140px;
+  border-radius: 5px;
+}
+
+.description {
+  float: right;
+  text-align: justify;
+  background-color: #ffffff;
+  color: #ab987a;
+  padding: 17px;
+  border: none;
+  border-radius: 10px;
+  margin: 5px;
+}
+
+
+
+
+/*Footer======================*/
+footer {
+  background-color: #0f1626;
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  height: 150px;
+}
+
+footer > span:before {
+  content: ' \00A9'
+}
+
+.space {
+  margin-top: 60px;
+}
+
+
+ a > i {
+  margin: 20px 50px;
+}
+
+i.fab {
+  color: #ffffff;
+}
+
