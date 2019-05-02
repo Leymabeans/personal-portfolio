@@ -117,30 +117,6 @@ button:hover {
 
 
 
-/*Social Media======================*/
-.social {
-  text-align: center;
-  position: absolute;
-  float: left;
-  font-size: 12px;
-  width: 30px;
-  margin-top: 15px;
-}
-
- a > i {
-  display: block;
-  margin: 10px 15px;
-}
-
-i.fab, i.free{
-  color: #ab987a;
-}
-
-
-
-
-
-
 /*About====================*/
 .biosection {
   background-color: #f5f5f5;
@@ -184,72 +160,64 @@ i.fab, i.free{
 
 /*Portfolio=====================*/
 .portfolio {
-  background-color: #ab987a;
-  height: 600px;
+  background-color: #ffffff;
+  height: 900px;
 }
 
 .title {
-  color: #ffffff;
+  color: #ab987a;
 }
 
 .project {
-  height: 250px;
-  margin-bottom: 15px;
+  width: 70%;
+  height: 300px;
+  margin: 0px auto;
 }
 
-.item {
-  background-color: #000000;
-  display: inline;
-  min-width: 300px;
-  max-width: 500px;
-  height: 300px;
-  border-radius: 5px;
+.client {
+  float: left;
+  color: #ab987a;
+  font-size: 18px;
+  width: 300px;
+  height: 200px;
   margin-left: 20px;
   transition: opacity 0.8s;
 }
 
-.item:hover {
-  cursor: pointer;
-  opacity: 0.8;
-}
-
 .description {
-  display: inline;
   float: right;
-  min-width: 300px;
-  max-width: 400px;
+  color: #000000;
+  line-height: 1.9em;
   text-align: justify;
-  background-color: #ffffff;
-  color: #ab987a;
-  padding: 17px;
-  border: none;
-  border-radius: 10px;
+  font-size: 17px;
+  width: 500px;
+  height: 200px;
   margin-right: 20px;
 }
 
-
-
-
-/*Description Page=====================*/
-#projectitle {
-  font-size: 60px;
-  color: rgb(54, 8, 128);
-}
-
-.date {
-  display: block;
-  text-align: center;
-  font-size: 16px;
+.position {
   font-style: italic;
-  margin: -30px auto 10px auto;
-  
+  font-size: 16px;
 }
 
-.projectpic {
-  display: block;
-  min-width: 60%;
-  max-width: 80%;
-  height: 600px;
-  border-radius: 8px;
-  margin: 5px auto 30px auto;
+
+
+
+/*Social Media======================*/
+.social {
+  font-size: 12px;
+  width: 300px;
+  margin: 100px auto 10px auto;
 }
+
+ a > i {
+  display: block;
+  margin: 10px 15px;
+}
+
+i.fab, i.free{
+  color: #ab987a;
+}
+
+
+
