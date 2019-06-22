@@ -139,12 +139,12 @@ button:hover {
 }
 
 .biopic{
-  float: right;
-  width: 400px;
-  height: 420px;
+
+  width: 100%;
+  height: 60%;
   border-radius: 50%;
   opacity: 1;
-  margin: 20px;
+  margin: 20px auto;
   transform: rotate(90deg);
 }
 
@@ -221,3 +221,11 @@ i.fab, i.free{
 
 
 
+/*Respondsive for Mobile============*/
+@media only screen and (max-width: 1200px){
+  .client {
+    float: none;
+    margin: 20px auto;
+    width: 100%;
+  }
+}
