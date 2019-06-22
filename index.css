@@ -17,7 +17,7 @@
 
 /*Parrallax=========================*/
 .parrallax {
-  background-image: url("../miscellaneous/jumbotron.jpg");
+  background-image: url("./jumbotron.jpg");
   height: 110vh;
   filter: brightness(0.09);
   background-attachment: fixed;
