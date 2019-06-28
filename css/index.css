@@ -21,7 +21,7 @@
 
 /*Parrallax=========================*/
 .parrallax {
-  background-image: url("./jumbotron.jpg");
+  background-image: url("../images/jumbotron.jpg");
   height: 110vh;
   filter: brightness(0.09);
   background-attachment: fixed;
@@ -149,7 +149,7 @@ button:hover {
 
 #biopic{
   position: relative;
-  background-image: url("./profilepic.jpg");
+  background-image: url("../images/profilepic.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

@@ -5,9 +5,9 @@
     <title>Nathan Ley | Professional Web Developer</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./title.ico">
+    <link rel="shortcut icon" href="./images/title.ico">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800" rel="stylesheet">
-    <link href="./index.css" rel="stylesheet" type="text/css">
+    <link href="./css/index.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   </head>
 
@@ -34,25 +34,25 @@
     <div class="container">
       <h1 class="section-header">Process</h1>
       <section class="steps">
-        <img src="./Step1.jpg">
+        <img src="./images/Step1.jpg">
         <h3>01. Strategize</h3>
         <p>Gather information for project by talking to real users and relaying data back to client to apply it to practical use </p>
       </section>
 
       <section class="steps">
-        <img src="./Step2.jpg">
+        <img src="./images/Step2.jpg">
         <h3>02. Design</h3>
         <p>Use collected data and client input to create layout that encaptures project outlines with correct UI/UX for the all parties</p>
       </section>
 
       <section class="steps">
-        <img src="./Step3.jpg">
+        <img src="./images/Step3.jpg">
         <h3>03. Develop</h3>
         <p>Using designs and wireframes as a guidline, carefully develop and test software to ensure quality of the product to every detail</p>
       </section>
 
       <section class="steps">
-        <img src="./Step4.jpg">
+        <img src="./images/Step4.jpg">
         <h3>04. Launch</h3>
         <p>Wrap up and deploy software, bringing the product to life and take it to the markets for the world</p>
       </section>
