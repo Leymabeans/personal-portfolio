@@ -31,31 +31,31 @@
 
 
 <!--Step Process====================================================-->  
-    <div class="container">
+    <div class="grid-container">
       <h1 class="section-header">Process</h1>
-      <section class="steps">
-        <img src="./images/Step1.jpg">
-        <h3>01. Strategize</h3>
-        <p>Gather information for project by talking to real users and relaying data back to client to apply it to practical use </p>
-      </section>
+        <img class="img-left" src="./images/Step1.jpg">
+        <div class="text-left">
+          <h3>01. Strategize</h3>
+          <p>Gather information for project by talking to real users and relaying data back to client to apply it to practical use </p>
+        </div>
 
-      <section class="steps">
-        <img src="./images/Step2.jpg">
-        <h3>02. Design</h3>
-        <p>Use collected data and client input to create layout that encaptures project outlines with correct UI/UX for the all parties</p>
-      </section>
+        <img class="img-right" src="./images/Step2.jpg">
+        <div class="text-right">
+          <h3>02. Design</h3>
+          <p>Use collected data and client input to create layout that encaptures project outlines with correct UI/UX for the all parties</p>
+        </div>
 
-      <section class="steps">
-        <img src="./images/Step3.jpg">
-        <h3>03. Develop</h3>
-        <p>Using designs and wireframes as a guidline, carefully develop and test software to ensure quality of the product to every detail</p>
-      </section>
+        <img class="img-left" src="./images/Step3.jpg">
+        <div class="text-left">
+          <h3>03. Develop</h3>
+          <p>Using designs and wireframes as a guidline, carefully develop and test software to ensure quality of the product to every detail</p>
+        </div>
 
-      <section class="steps">
-        <img src="./images/Step4.jpg">
-        <h3>04. Launch</h3>
-        <p>Wrap up and deploy software, bringing the product to life and take it to the markets for the world</p>
-      </section>
+        <img class="img-right" src="./images/Step4.jpg">
+        <div class="text-right">
+          <h3>04. Launch</h3>
+          <p>Wrap up and deploy software, bringing the product to life and take it to the markets for the world</p>
+        </div>
     </div>
 
 
