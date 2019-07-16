@@ -18,47 +18,48 @@
     <div id="loader"></div>
 
 
-<!--Greeting=========================================================-->
-    <div class="greeting">
-      <img src="./images/giddy_opening.jpg">
-      <p id="message1_1">Hey there, glad you made it to Nathan's site. My name is Giddy, and I'll be your guide through this site. And before you say anything about my appearence...</p>
-      <button id="button1_1" onclick="change1()">Go on</button>
-
-      <p id="message1_2">I am proud of my body. It doesn't matter that my arms are squiggly or that I don't have a face: I love myself.</p>
-      <button id="button1_2" onclick="change2()">Um, good to know</button>
-      
-      <p id="message1_3">But anyway, enough about me. You're here for the website anyway. Shall we begin?</p>
-      <button id="button1_3">Let's Go</button>
+<!--Opening=========================================================-->
+    <div id="greeting" class="grid-container1">
+      <img id="opening" src="./images/giddy_opening1.jpg">
+      <button id="button1_1" onclick="change1()">Continue</button>
+      <button id="button1_2" onclick="change2()">Awesome!</button>
+      <button id="button1_3" onclick="disappear()">Let's Go</button>
     </div>
 
 
 
 <!--Step Process====================================================-->  
-    <div class="grid-container">
-      <h1 class="section-header">Process</h1>
-        <img class="img-left" src="./images/Step1.jpg">
-        <div class="text-left">
-          <h3>01. Strategize</h3>
-          <p>Gather information for project by talking to real users and relaying data back to client to apply it to practical use </p>
-        </div>
+    <div style="height: 150px; overflow: hidden;">
+      <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+        <path d="M0.00,92.27 C216.83,192.92 304.30,8.39 500.00,109.03 L500.00,0.00 L0.00,0.00 Z" style="stroke: none;fill: #4abdac;"></path>
+      </svg>
+    </div>   
 
-        <img class="img-right" src="./images/Step2.jpg">
-        <div class="text-right">
-          <h3>02. Design</h3>
-          <p>Use collected data and client input to create layout that encaptures project outlines with correct UI/UX for the all parties</p>
-        </div>
+    <div class="grid-container2">
+      <h1 class="section-header1">Process</h1>
+      <img class="img-left" src="./images/Step1.jpg">
+      <div class="text-left">
+        <h3>1 Strategize</h3>
+        <p>Gather information for project by talking to real users and relaying data back to client to apply it to practical use </p>
+      </div>
 
-        <img class="img-left" src="./images/Step3.jpg">
-        <div class="text-left">
-          <h3>03. Develop</h3>
-          <p>Using designs and wireframes as a guidline, carefully develop and test software to ensure quality of the product to every detail</p>
-        </div>
+      <img class="img-right" src="./images/Step2.jpg">
+      <div class="text-right">
+        <h3>2 Design</h3>
+        <p>Use collected data and client input to create layout that encaptures project outlines with correct UI/UX for the all parties</p>
+      </div>
+      <br><br>
+      <img class="img-left" src="./images/Step3.jpg">
+      <div class="text-left">
+        <h3>3 Develop</h3>
+        <p>Using designs and wireframes as a guidline, carefully develop and test software to ensure quality of the product to every detail</p>
+      </div>
 
-        <img class="img-right" src="./images/Step4.jpg">
-        <div class="text-right">
-          <h3>04. Launch</h3>
-          <p>Wrap up and deploy software, bringing the product to life and take it to the markets for the world</p>
-        </div>
+      <img class="img-right" src="./images/Step4.jpg">
+      <div class="text-right">
+        <h3>4 Launch</h3>
+        <p>Wrap up and deploy software, bringing the product to life and take it to the markets for the world</p>
+      </div>
     </div>
 
 
