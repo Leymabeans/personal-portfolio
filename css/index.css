@@ -1,5 +1,5 @@
-/* Changing default styling==========*/
-* {
+/* Changing default styling==============*/
+html, body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -19,59 +19,37 @@
 
 
 
-/*Parrallax=========================*/
-.parrallax {
-  background-image: url("../images/jumbotron.jpg");
-  height: 110vh;
-  filter: brightness(0.09);
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+
+/*Loader==================================*/
+#loader {
   position: relative;
-  transition: filter 1.6s;
+  margin: 45vh auto;
+  border: 16px solid #ffffff;
+  border-radius: 50%;
+  border-top: 7px solid #4ABDAC;
+  width: 90px;
+  height: 90px;
+  animation: spin 1.5s linear infinite;
 }
 
-.parrallax:hover {
-  filter: brightness(0.5);
-}
-
-.intro {
-  position: absolute;
-  text-align: center;
-  width: 80%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-}
-
-.name {
-  font-size: 80px;
-}
-
-button {
-  outline: none;
-  background-color: #ab987a;
-  color: #ffffff;
-  padding: 20px;
-  border: none;
-  border-radius: 15px;
-  margin: 5px auto;
-  transition: opacity 1s, transform 1s;
-}
-
-button:hover {
-  cursor: pointer;
-  opacity: 0.9;
-  transform: scale(1.1);
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  50% { transform: rotate(360deg); }
+  100% { transform: rotate(720deg); }
 }
 
 
+/*Greeting===============================*/
+.greeting {
+  background-color: #DFDCE3;
+  min-height: 100%;
+}
 
+#message1_2, #button1_2, #message1_3, #button1_3 {
+  display: none;
+}
 
-
-/*Step Process=====================*/
+/*Step Process===========================*/
 .section-header {
   text-align: center;
   grid-column: 1 / 5;
@@ -107,7 +85,7 @@ p {
 }
 
 
-/*About====================*/
+/*About===================================*/
 .biosection {
   background-color: #ab987a;
   position: relative;
@@ -148,7 +126,7 @@ p {
 }
 
 
-/*Client Review=====================*/
+/*Client Review===========================*/
 .title {
   grid-column: 1 / 5;
   color: #ab987a;
@@ -182,7 +160,7 @@ p {
 
 
 
-/*Social Media======================*/
+/*Social Media===========================*/
 .social {
   font-size: 12px;
   width: 300px;

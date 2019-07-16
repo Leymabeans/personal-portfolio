@@ -9,24 +9,27 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800" rel="stylesheet">
     <link href="./css/index.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script type="text/javascript" src="./js/index.js"></script>
   </head>
 
 
+<!--Loader===========================================================-->
+  <body onload="initial()">
+    <div id="loader"></div>
 
 
-<!--Parrallax Jumbotron============================================ -->  
-  <body>  
-    <div class="parrallax">  
+<!--Greeting=========================================================-->
+    <div class="greeting">
+      <img src="./images/giddy_opening.jpg">
+      <p id="message1_1">Hey there, glad you made it to Nathan's site. My name is Giddy, and I'll be your guide through this site. And before you say anything about my appearence...</p>
+      <button id="button1_1" onclick="change1()">Go on</button>
+
+      <p id="message1_2">I am proud of my body. It doesn't matter that my arms are squiggly or that I don't have a face: I love myself.</p>
+      <button id="button1_2" onclick="change2()">Um, good to know</button>
+      
+      <p id="message1_3">But anyway, enough about me. You're here for the website anyway. Shall we begin?</p>
+      <button id="button1_3">Let's Go</button>
     </div>
-    <div class="intro">
-      <h1 class="name">Nathan Ley</h1>
-      <p>_____________</p><br>
-      <p>Changing lives, one line of code at a time</p><br>
-      <a href="mailto:nathanley.work@gmail.com">
-        <button class="contact">Contact Me</button>
-      </a>
-    </div>
-
 
 
 
