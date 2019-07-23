@@ -29,13 +29,13 @@
 
 
 <!--Step Process====================================================-->  
-    <div style="height: 150px; overflow: hidden;">
+    <div id="steps" class="grid-container2">
+    <div class="wave">
       <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
         <path d="M0.00,92.27 C216.83,192.92 304.30,8.39 500.00,109.03 L500.00,0.00 L0.00,0.00 Z" style="stroke: none;fill: #4abdac;"></path>
       </svg>
     </div>   
 
-    <div class="grid-container2">
       <h1 class="section-header1">Process</h1>
       <img class="img-left" src="./images/Step1.jpg">
       <div class="text-left">
@@ -48,7 +48,13 @@
         <h3>2 Design</h3>
         <p>Use collected data and client input to create layout that encaptures project outlines with correct UI/UX for the all parties</p>
       </div>
-      <br><br>
+
+      <div class="giddy_explain">
+        <img id="process" class="img-center" src="./images/giddy_process.jpg">
+        <button id="button2_1" onclick="change3()">Continue</button>
+        <button id="button2_2" onclick="disappear2()">Awesome!</button>
+      </div>
+
       <img class="img-left" src="./images/Step3.jpg">
       <div class="text-left">
         <h3>3 Develop</h3>
@@ -72,7 +78,7 @@
         <div id="biopic"></div>
       <div class="biography">
       
-        <h2> Who am I?</h2>
+        <h2 > Who am I?</h2>
         <p>Hello, my name is Nathan Ley and I am a 17 year old 
         professional web developer and designer based out of Paynesville,
         MN. </p>
