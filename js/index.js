@@ -26,3 +26,16 @@ function change2() {
 function disappear() {
   document.getElementById('greeting').style.display = "none";
 }
+
+
+/*Process========================================*/
+function change3() {
+  document.getElementById('process').src = "./images/giddy_process2.jpg";
+
+  document.getElementById("button2_1").style.display = "none";
+  document.getElementById('button2_2').style.display = "block";
+}
+
+function disappear2() {
+  document.getElementById('steps').style.display = "none";
+}
