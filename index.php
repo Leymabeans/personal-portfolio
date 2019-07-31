@@ -49,7 +49,7 @@
         <p>Use collected data and client input to create layout that encaptures project outlines with correct UI/UX for the all parties</p>
       </div>
 
-      <div class="giddy_explain">
+      <div class="giddy-explain">
         <img id="process" class="img-center" src="./images/giddy_process.jpg">
         <button id="button2_1" onclick="change3()">Continue</button>
         <button id="button2_2" onclick="disappear2()">Awesome!</button>
