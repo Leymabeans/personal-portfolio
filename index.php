@@ -8,64 +8,53 @@
     <link rel="shortcut icon" href="./images/title.ico">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800" rel="stylesheet">
     <link href="./css/index.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <script type="text/javascript" src="./js/index.js"></script>
   </head>
 
 
-<!--Loader===========================================================-->
-  <body onload="initial()">
-    <div id="loader"></div>
 
 
-<!--Opening=========================================================-->
-    <div id="greeting" class="grid-container1">
-      <img id="opening" src="./images/giddy_opening1.jpg">
-      <button id="button1_1" onclick="change1()">Continue</button>
-      <button id="button1_2" onclick="change2()">Awesome!</button>
-      <button id="button1_3" onclick="disappear()">Let's Go</button>
+<!--Parrallax Jumbotron============================================ -->  
+  <body>  
+    <div class="parrallax">  
+    </div>
+    <div class="intro">
+      <h1 class="name">Nathan Ley</h1>
+      <p>_____________</p><br>
+      <p>Changing lives, one line of code at a time</p><br>
+      <a href="mailto:nathanley.work@gmail.com">
+        <button class="contact">Contact Me</button>
+      </a>
     </div>
 
 
 
+
 <!--Step Process====================================================-->  
-    <div id="steps" class="grid-container2">
-    <div class="wave">
-      <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
-        <path d="M0.00,92.27 C216.83,192.92 304.30,8.39 500.00,109.03 L500.00,0.00 L0.00,0.00 Z" style="stroke: none;fill: #4abdac;"></path>
-      </svg>
-    </div>   
-
-      <h1 class="section-header1">Process</h1>
-      <img class="img-left" src="./images/Step1.jpg">
-      <div class="text-left">
-        <h3>1 Strategize</h3>
+    <div class="container">
+      <h1 class="section-header">Process</h1>
+      <section class="steps">
+        <img src="./images/Step1.jpg">
+        <h3>01. Strategize</h3>
         <p>Gather information for project by talking to real users and relaying data back to client to apply it to practical use </p>
-      </div>
+      </section>
 
-      <img class="img-right" src="./images/Step2.jpg">
-      <div class="text-right">
-        <h3>2 Design</h3>
+      <section class="steps">
+        <img src="./images/Step2.jpg">
+        <h3>02. Design</h3>
         <p>Use collected data and client input to create layout that encaptures project outlines with correct UI/UX for the all parties</p>
-      </div>
+      </section>
 
-      <div class="giddy-explain">
-        <img id="process" class="img-center" src="./images/giddy_process.jpg">
-        <button id="button2_1" onclick="change3()">Continue</button>
-        <button id="button2_2" onclick="disappear2()">Awesome!</button>
-      </div>
-
-      <img class="img-left" src="./images/Step3.jpg">
-      <div class="text-left">
-        <h3>3 Develop</h3>
+      <section class="steps">
+        <img src="./images/Step3.jpg">
+        <h3>03. Develop</h3>
         <p>Using designs and wireframes as a guidline, carefully develop and test software to ensure quality of the product to every detail</p>
-      </div>
+      </section>
 
-      <img class="img-right" src="./images/Step4.jpg">
-      <div class="text-right">
-        <h3>4 Launch</h3>
+      <section class="steps">
+        <img src="./images/Step4.jpg">
+        <h3>04. Launch</h3>
         <p>Wrap up and deploy software, bringing the product to life and take it to the markets for the world</p>
-      </div>
+      </section>
     </div>
 
 
@@ -78,7 +67,7 @@
         <div id="biopic"></div>
       <div class="biography">
       
-        <h2 > Who am I?</h2>
+        <h2> Who am I?</h2>
         <p>Hello, my name is Nathan Ley and I am a 17 year old 
         professional web developer and designer based out of Paynesville,
         MN. </p>
