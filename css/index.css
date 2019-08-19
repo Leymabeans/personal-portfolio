@@ -177,14 +177,26 @@ button:hover {
   font-size: 17px;
 }
 
-.screenshots {
-  grid-column: 2 / 3;
-  width: 80%;
+.url {
+  color: #ff533d;
+  font-style: italic;
+  font-size: 15px;
 }
 
-.recommend {
-  grid-column: 1 / 6;
-  width: 70%;
-  margin: 20px auto 70px auto;
-  font-size: 18px;
+a {
+  text-decoration: none;
+}
+
+.screenshots {
+  grid-column: 2 / 3;
+  float: left;
+  width: 40%;
+  border-radius: 3px;
+  margin: 10px 0px 0px 10px;
+  transition: opacity 1s, transform 1s;
+}
+
+.screenshots:hover {
+  cursor: pointer;
+  transform: scale(1.1);
 }
