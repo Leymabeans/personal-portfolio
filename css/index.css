@@ -210,7 +210,7 @@ a {
   display: grid;
   grid-template-columns: 1fr 2fr;
   background-color: #ffffff;
-  margin-bottom: 200px;
+  margin-bottom: 150px;
 }
 
 .helpers {
@@ -232,7 +232,16 @@ a {
 
 /*Footer====================*/
 .footer {
-  margin: 20px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.icons {
+  grid-column: 2 / 3;  
+  width: 50%;
+  margin: 0px auto;
 }
 
 .item {
