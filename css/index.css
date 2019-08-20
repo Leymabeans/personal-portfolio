@@ -249,3 +249,12 @@ a {
   height: 30px;
   margin: 5px 15px;
 }
+
+
+
+/*Respondsive Design========================*/
+@media screen and (max-wdith: 600px) {
+  #one, #two, #three, #four {
+    grid-column: 1 / 5;
+  }
+}
