@@ -6,6 +6,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   overflow-x: hidden;
   -ms-overflow-style: -ms-autohiding-scrollbar;
+  scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar { 
@@ -68,7 +69,7 @@ button:hover {
 .process {
   display: grid;
   grid-template-columns: 1fr 4fr 1fr 4fr;
-  background-color: #f3f3f3;
+  background-color: #ffffff;
   color: #46423d;
 }
 
@@ -83,7 +84,7 @@ button:hover {
   grid-column: 1 / 5;
   width: 50%;
   font-weight: 700;
-  font-size: 40px;
+  font-size: 42px;
   text-align: center;
   margin: 0px auto 150px auto;
 }
@@ -144,7 +145,7 @@ button:hover {
 .reviews {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  background-color: #ffffff;
+  background-color: #f3f3f3;
   color: #46423d;
 }
 
@@ -168,7 +169,7 @@ button:hover {
 
 .position {
   font-style: italic;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .description {
@@ -190,13 +191,52 @@ a {
 .screenshots {
   grid-column: 2 / 3;
   float: left;
-  width: 40%;
+  height: 200px;
+  width: 460px;
   border-radius: 3px;
-  margin: 10px 0px 0px 10px;
+  margin: 20px 0px 0px 20px;
   transition: opacity 1s, transform 1s;
 }
 
 .screenshots:hover {
   cursor: pointer;
   transform: scale(1.1);
+}
+
+
+
+/*Recommendations============*/
+.recommendations {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  background-color: #ffffff;
+  margin-bottom: 200px;
+}
+
+.helpers {
+  grid-column: 1 / 2;
+  width: 300px;
+  height: 300px;
+  border-radius: 6px;
+  margin: 10px auto;
+}
+
+.recommend {
+  grid-column: 2 / 3;
+  width: 73%;
+  margin: -20px 0px 10px 0px;
+  font-size: 18px;
+}
+
+
+
+/*Footer====================*/
+.footer {
+  margin: 20px auto;
+}
+
+.item {
+  width: 30px;
+  height: 30px;
+  margin: 5px 15px;
 }
