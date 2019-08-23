@@ -1,6 +1,6 @@
 <!--Meta Data======================================================= -->
 <!DOCTYPE html>
-<html>
+<html manifest="myapp.appcache">
   <head>
     <title>Nathan Ley | Professional Developer</title>
     <meta charset="UTF-8">
@@ -33,29 +33,31 @@
     <div class="process">
       <h3 class="section-title">Process</h3>
       <h1 class="section-header">Keep Things Simple</h1>
-      <section class="steps" id="one">
-        <img src="./images/step-1.jpg">
-        <h2>01. Strategize</h2>
-        <p>Gather information for project by talking to real users and relaying data back to client to apply it to practical use </p>
-      </section>
+      <ul>
+        <li class="steps">
+          <img src="./images/step-1.jpg">
+          <h2>01. Strategize</h2>
+          <p>Gather information for project by talking to real users and relaying data back to client to apply it to practical use </p>
+        </li>
 
-      <section class="steps" id="two">
-        <img src="./images/step-2.jpg">
-        <h2>02. Design</h2>
-        <p>Use collected data and client input to create layout that encaptures project outlines with correct UI/UX for the all parties</p>
-      </section>
+        <li class="steps">
+          <img src="./images/step-2.jpg">
+          <h2>02. Design</h2>
+          <p>Use collected data and client input to create layout that encaptures project outlines with correct UI/UX for the all parties</p>
+        </li>
 
-      <section class="steps" id="three">
-        <img src="./images/step-3.jpg">
-        <h2>03. Develop</h2>
-        <p>Using designs and wireframes as a guidline, carefully develop and test software to ensure quality of the product to every detail</p>
-      </section>
+        <li class="steps">
+          <img src="./images/step-3.jpg">
+          <h2>03. Develop</h2>
+          <p>Using designs and wireframes as a guidline, carefully develop and test software to ensure quality of the product to every detail</p>
+        </li>
 
-      <section class="steps" id="four">
-        <img src="./images/step-4.jpg">
-        <h2>04. Launch</h2>
-        <p>Wrap up and deploy software, bringing the product to life and take it to the markets for the world</p>
-      </section>
+        <li class="steps">
+          <img src="./images/step-4.jpg">
+          <h2>04. Launch</h2>
+          <p>Wrap up and deploy software, bringing the product to life and take it to the markets for the world</p>
+        </li>
+      </ul>
     </div>
 
 
@@ -71,44 +73,52 @@
       <h3 class="section-title">Clients</h3>
       <h1 class="section-header">What They Have to Say</h1>
 
-
       <div class="details">
-        <h2>Greg Marinello</h2>
+        <h2 class="client">Greg Marinello</h2>
         <h3 class="position">CEO of Ello Consulting</h3>
         <p class="description">Working with Nathan was a clean, and efficient experience. Being a bit on the younger side, he brought a lot of new, modern designs to the table. I could always rely on him to meet deadlines, and would truly recommend him to anyone out there looking for a developer. Without him, our business would not be the same! </p>
         <a href="#">
           <p class="url">In Development</p>
         </a>
       </div>
-      <div>
+      <li>
         <img src="./images/ello/header.png" class="screenshots">
         <img src="./images/ello/process.png" class="screenshots">
         <img src="./images/ello/process2.png" class="screenshots">
         <img src="./images/ello/contact.png" class="screenshots">
-      </div>
+      </li>
+      <p class="space"></p>
 
 
       <div class="details">
-        <h2>Andrew Zweifel</h2>
-        <h3 class="position">Co-Founder of Lame Games</h3>
-        <p class="description">Detail oriented, intelligent, deadline oriented and broad-minded developer; has vast knowledge and is thorough. Thanks to interpersonal skills, Nathan has great relations with both company clients and potential customers. Is able to work in a fast-paced environment, and highly recommended.</p>   
-        <a href="https://www.lamegames.org" target="_blank">
-          <p class="url">Visit website</p>
-        </a>
+        <section class="person">
+          <h2>Andrew Zweifel</h2>
+          <h3 class="position">Co-Founder of Lame Games</h3>
+        </section>
+        
+        <section class="feedback">
+          <p class="description">Detail oriented, intelligent, deadline oriented and broad-minded developer; has vast knowledge and is thorough. Thanks to interpersonal skills, Nathan has great relations with both company clients and potential customers. Is able to work in a fast-paced environment, and highly recommended.</p>   
+          <a href="https://www.lamegames.org" target="_blank">
+            <p class="url">Visit website</p>
+          </a>
+        </section>
+        
       </div>
-      <div>
+      <li>
         <img src="./images/lame-games/header.JPG" class="screenshots">
         <img src="./images/lame-games/login.JPG" class="screenshots">
         <img src="./images/lame-games/dashboard.JPG" class="screenshots">
         <img src="./images/lame-games/profile.JPG" class="screenshots">
-      </div>
+      </li>
+      <p class="space"></p>
     </div>
+    
 
 
 
     <!--Recommendations================================================-->
     <div class="recommendations">
-      <div class="wave" >
+      <div class="wave">
         <svg class="svg" viewBox="0 0 500 150" preserveAspectRatio="none">
           <path d="M0.00,92.27 C216.83,192.92 304.30,8.39 500.00,109.03 L500.00,0.00 L0.00,0.00 Z" style="stroke: none;fill: #f3f3f3;"></path>
         </svg>
@@ -116,11 +126,10 @@
       <h3 class="section-title">Recommendations</h3>
       <h1 class="section-header">They Matter Too</h1>
       
-
-      <img class="helpers" src="https://scontent-sin2-2.cdninstagram.com/vp/006ddda94456e66e18581b6813251d64/5D9513C0/t51.2885-15/e35/56382773_371030070173830_2567609465586226398_n.jpg?_nc_ht=scontent-sin2-2.cdninstagram.com&se=8&ig_cache_key=MjAyMzcwNDM5ODUwODk1ODQ2MA%3D%3D.2">
       <div class="recommend">
-        <h2>Blake Connally</h2>
+        <h2 class="client">Blake Connally</h2>
         <h3 class="position">CEO of Modsi</h3><br>
+        <img class="helpers" src="https://scontent-sin2-2.cdninstagram.com/vp/006ddda94456e66e18581b6813251d64/5D9513C0/t51.2885-15/e35/56382773_371030070173830_2567609465586226398_n.jpg?_nc_ht=scontent-sin2-2.cdninstagram.com&se=8&ig_cache_key=MjAyMzcwNDM5ODUwODk1ODQ2MA%3D%3D.2">
         <p class="description">Nathan was awesome to work with. He went above and beyond what was required of him for the project. He is highly experienced in what he does and I would recommend him to anyone. My favorite part is he is self-managed, has great communication and delivers quality work at the end of the day. Someone like him is extremely hard to find on this platform. Highly recommended. </p>
       </div>
     </div>

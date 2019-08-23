@@ -1,9 +1,10 @@
-/* Changing default styling=============*/
+/* Generic Styling=============*/
 body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: 'Open Sans', sans-serif;
+  text-align: center;
   overflow-x: hidden;
   -ms-overflow-style: -ms-autohiding-scrollbar;
   scroll-behavior: smooth;
@@ -13,13 +14,63 @@ body {
   display: none; 
 }
 
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
 
 
-/*Parrallax=============================*/
+
+
+/*Section blocks=============*/
+.section-title {
+  font-weight: 400;
+  font-size: 21px;
+  text-align: center;
+  margin: 140px auto 5px auto;
+}
+
+.section-header {
+  width: 50%;
+  font-weight: 700;
+  font-size: 42px;
+  text-align: center;
+  margin: 0px auto 150px auto;
+}
+
+.wave {
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+}
+
+.svg {
+  height: 100%; 
+  width: 100%;
+}
+
+ul {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 3rem;
+}
+
+.space {
+  margin-bottom: 200px;
+}
+
+
+
+
+/*Header=================*/
 .parrallax {
   background-image: url("../images/jumbotron.jpg");
   height: 100vh;
-  filter: brightness(0.09);
+  filter: brightness(0.3);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -29,7 +80,7 @@ body {
 }
 
 .parrallax:hover {
-  filter: brightness(0.5);
+  filter: brightness(0.6);
 }
 
 .intro {
@@ -65,34 +116,15 @@ button:hover {
 
 
 
-/*Step Process==========================*/
+
+/*Step Process===========*/
 .process {
-  display: grid;
-  grid-template-columns: 1fr 4fr 1fr 4fr;
   background-color: #ffffff;
   color: #46423d;
 }
 
-.section-title {
-  grid-column: 1 / 5;
-  font-weight: 400;
-  font-size: 21px;
-  margin: 140px auto 5px auto;
-}
-
-.section-header {
-  grid-column: 1 / 5;
-  width: 50%;
-  font-weight: 700;
-  font-size: 42px;
-  text-align: center;
-  margin: 0px auto 150px auto;
-}
-
 .steps {
-  width: 60%;
-  text-align: center;
-  margin: 15px auto 90px auto;
+  margin-bottom: 100px;
   transition: transform 0.9s, opacity 0.3s;
 }
 
@@ -101,26 +133,7 @@ button:hover {
   transform: scale(1.2);
 }
 
-#one {
-  grid-column: 1 / 3;
-}
-
-#two {
-  grid-column: 3 / 5;
-}
-
-#three {
-  grid-column: 1 / 3;
-  margin-bottom: 130px;
-}
-
-#four {
-  grid-column: 3 / 5;
-  margin-bottom: 130px;
-}
-
-.steps img {
-  float: left;
+li > img {
   width: 80px;
   height: 80px;
   border-radius: 4px;
@@ -128,12 +141,10 @@ button:hover {
 }
 
 .steps h2 {
-  display: inline;
   font-weight: 700;
 }
 
 .steps p {
-  clear: both;
   font-size: 17px;
   margin: auto;
 }
@@ -143,28 +154,25 @@ button:hover {
 
 /*Client Review======================*/
 .reviews {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
   background-color: #f3f3f3;
   color: #46423d;
 }
 
-.wave {
-  grid-column: 1 / 3;
-  height: 150px;
-  overflow: hidden;
-}
-
-.svg {
-  height: 100%; 
-  width: 100%;
-}
-
 .details {
-  grid-column: 1 / 2;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
   width: 70%;
   margin: 20px auto 120px auto;
   font-size: 18px;
+}
+
+.person {
+  grid-column: 1 / 2;
+  margin: auto 30px auto 0px;
+}
+
+.feedback {
+  grid-column: 2 / 3;
 }
 
 .position {
@@ -184,17 +192,10 @@ button:hover {
   font-size: 15px;
 }
 
-a {
-  text-decoration: none;
-}
-
 .screenshots {
-  grid-column: 2 / 3;
-  float: left;
   height: 200px;
-  width: 460px;
+  width: 360px;
   border-radius: 3px;
-  margin: 20px 0px 0px 20px;
   transition: opacity 1s, transform 1s;
 }
 
@@ -207,8 +208,6 @@ a {
 
 /*Recommendations============*/
 .recommendations {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
   background-color: #ffffff;
   margin-bottom: 150px;
 }
@@ -233,28 +232,27 @@ a {
 /*Footer====================*/
 .footer {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  background-color: #ffffff;
-  margin-bottom: 10px;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  grid-gap: 5rem;
 }
 
-.icons {
-  grid-column: 2 / 3;  
+.icons { 
   width: 50%;
   margin: 0px auto;
 }
 
 .item {
-  width: 30px;
-  height: 30px;
+  width: 35px;
+  height: 35px;
   margin: 5px 15px;
 }
 
 
 
-/*Respondsive Design========================*/
-@media screen and (max-wdith: 600px) {
-  #one, #two, #three, #four {
-    grid-column: 1 / 5;
+/*Extra Respondsive design===*/
+@media screen and (min-width: 600px) {
+  .details {
+    width: 40%;
   }
 }
