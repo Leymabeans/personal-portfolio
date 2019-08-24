@@ -34,11 +34,11 @@ li {
 }
 
 .section-header {
-  width: 50%;
+  width: 55%;
   font-weight: 700;
   font-size: 42px;
   text-align: center;
-  margin: 0px auto 150px auto;
+  margin: 0px auto 90px auto;
 }
 
 .wave {
@@ -124,6 +124,7 @@ button:hover {
 }
 
 .steps {
+  width: 90%;
   margin-bottom: 100px;
   transition: transform 0.9s, opacity 0.3s;
 }
@@ -159,20 +160,16 @@ li > img {
 }
 
 .details {
-  display: grid;
-  grid-template-columns: 1fr 4fr;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   width: 70%;
-  margin: 20px auto 120px auto;
+  margin: 20px auto 60px auto;
   font-size: 18px;
 }
 
-.person {
-  grid-column: 1 / 2;
-  margin: auto 30px auto 0px;
-}
-
-.feedback {
-  grid-column: 2 / 3;
+#space {
+  margin-top: 160px;
 }
 
 .position {
@@ -194,7 +191,7 @@ li > img {
 
 .screenshots {
   height: 200px;
-  width: 360px;
+  width: 350px;
   border-radius: 3px;
   transition: opacity 1s, transform 1s;
 }
@@ -206,30 +203,12 @@ li > img {
 
 
 
-/*Recommendations============*/
+/*Recommendations and Footer============*/
 .recommendations {
   background-color: #ffffff;
   margin-bottom: 150px;
 }
 
-.helpers {
-  grid-column: 1 / 2;
-  width: 300px;
-  height: 300px;
-  border-radius: 6px;
-  margin: 10px auto;
-}
-
-.recommend {
-  grid-column: 2 / 3;
-  width: 73%;
-  margin: -20px 0px 10px 0px;
-  font-size: 18px;
-}
-
-
-
-/*Footer====================*/
 .footer {
   display: grid;
   align-items: center;
@@ -251,8 +230,8 @@ li > img {
 
 
 /*Extra Respondsive design===*/
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1060px) {
   .details {
-    width: 40%;
+    width: 50%;
   }
 }
