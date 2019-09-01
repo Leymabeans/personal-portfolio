@@ -7,7 +7,6 @@ body {
   text-align: center;
   overflow-x: hidden;
   -ms-overflow-style: -ms-autohiding-scrollbar;
-  scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar { 
@@ -20,6 +19,8 @@ a {
 
 li {
   list-style-type: none;
+  width: 60%;
+  margin: auto;
 }
 
 
@@ -54,6 +55,8 @@ li {
 
 ul {
   display: grid;
+  width: 60%;
+  margin: auto;
   align-items: center;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   grid-gap: 3rem;
@@ -190,9 +193,10 @@ li > img {
 }
 
 .screenshots {
-  height: 200px;
-  width: 350px;
+  height: 250px;
+  width: 400px;
   border-radius: 3px;
+  margin: 10px;
   transition: opacity 1s, transform 1s;
 }
 
@@ -231,7 +235,7 @@ li > img {
 
 /*Extra Respondsive design===*/
 @media screen and (min-width: 1060px) {
-  .details {
-    width: 50%;
-  }
+    .details {
+        width: 50%;
+    }
 }
