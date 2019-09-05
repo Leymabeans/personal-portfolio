@@ -1,7 +1,6 @@
 /* Generic Styling=============*/
 body {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: 'Open Sans', sans-serif;
@@ -10,8 +9,8 @@ body {
   -ms-overflow-style: -ms-autohiding-scrollbar;
 }
 
-::-webkit-scrollbar {
-  display: none;
+::-webkit-scrollbar { 
+  display: none; 
 }
 
 a {
@@ -23,6 +22,9 @@ li {
   width: 60%;
   margin: auto;
 }
+
+
+
 
 /*Section blocks=============*/
 .section-title {
@@ -47,20 +49,16 @@ li {
 }
 
 .svg {
-  height: 100%;
+  height: 100%; 
   width: 100%;
 }
 
 ul {
-  display: -ms-grid;
   display: grid;
   width: 60%;
   margin: auto;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-grid-columns: (minmax(320px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   grid-gap: 3rem;
 }
 
@@ -68,26 +66,24 @@ ul {
   margin-bottom: 200px;
 }
 
+
+
+
 /*Header=================*/
 .parrallax {
   background-image: url("../images/jumbotron.jpg");
   height: 100vh;
-  -webkit-filter: brightness(0.3);
-          filter: brightness(0.3);
+  filter: brightness(0.3);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  -webkit-transition: -webkit-filter 1.6s;
-  transition: -webkit-filter 1.6s;
   transition: filter 1.6s;
-  transition: filter 1.6s, -webkit-filter 1.6s;
 }
 
 .parrallax:hover {
-  -webkit-filter: brightness(0.6);
-          filter: brightness(0.6);
+  filter: brightness(0.6);
 }
 
 .intro {
@@ -96,8 +92,7 @@ ul {
   width: 80%;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   color: #f3f3f3;
 }
 
@@ -114,17 +109,16 @@ button {
   border: 3px;
   border-radius: 15px;
   margin: 5px auto;
-  -webkit-transition: opacity 1s, -webkit-transform 1s;
-  transition: opacity 1s, -webkit-transform 1s;
   transition: opacity 1s, transform 1s;
-  transition: opacity 1s, transform 1s, -webkit-transform 1s;
 }
 
 button:hover {
   cursor: pointer;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
 }
+
+
+
 
 /*Step Process===========*/
 .process {
@@ -135,16 +129,12 @@ button:hover {
 .steps {
   width: 90%;
   margin-bottom: 100px;
-  -webkit-transition: opacity 0.3s, -webkit-transform 0.9s;
-  transition: opacity 0.3s, -webkit-transform 0.9s;
   transition: transform 0.9s, opacity 0.3s;
-  transition: transform 0.9s, opacity 0.3s, -webkit-transform 0.9s;
 }
 
 .steps:hover {
   cursor: pointer;
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 li > img {
@@ -163,6 +153,9 @@ li > img {
   margin: auto;
 }
 
+
+
+
 /*Client Review======================*/
 .reviews {
   background-color: #f3f3f3;
@@ -170,15 +163,9 @@ li > img {
 }
 
 .details {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-direction: column;
+  flex-wrap: wrap;
   width: 70%;
   margin: 20px auto 60px auto;
   font-size: 18px;
@@ -210,17 +197,15 @@ li > img {
   width: 400px;
   border-radius: 3px;
   margin: 10px;
-  -webkit-transition: opacity 1s, -webkit-transform 1s;
-  transition: opacity 1s, -webkit-transform 1s;
   transition: opacity 1s, transform 1s;
-  transition: opacity 1s, transform 1s, -webkit-transform 1s;
 }
 
 .screenshots:hover {
   cursor: pointer;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
 }
+
+
 
 /*Recommendations and Footer============*/
 .recommendations {
@@ -229,17 +214,13 @@ li > img {
 }
 
 .footer {
-  display: -ms-grid;
   display: grid;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-grid-columns: (minmax(80px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
   grid-gap: 5rem;
 }
 
-.icons {
+.icons { 
   width: 50%;
   margin: 0px auto;
 }
@@ -250,10 +231,11 @@ li > img {
   margin: 5px 15px;
 }
 
+
+
 /*Extra Respondsive design===*/
 @media screen and (min-width: 1060px) {
-  .details {
-    width: 50%;
-  }
+    .details {
+        width: 50%;
+    }
 }
-/*# sourceMappingURL=index.css.map */
