@@ -1,5 +1,4 @@
-/*Variables====================*/
-/* Generic Styling=============*/
+/*Imports and Variables=============*/
 body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -15,17 +14,14 @@ body {
   display: none;
 }
 
-li {
-  list-style-type: none;
-  width: 60%;
-  margin: auto;
+#space {
+  margin-top: 160px;
 }
 
 a {
   text-decoration: none;
 }
 
-/*Section blocks=============*/
 .section-title {
   font-weight: 400;
   font-size: 21px;
@@ -65,11 +61,11 @@ ul {
   grid-gap: 3rem;
 }
 
-.space {
-  margin-bottom: 200px;
+li {
+  text-decoration: none;
 }
 
-/*Header=================*/
+/*Header-Parrallax==================*/
 .parrallax {
   background-image: url("../images/jumbotron.jpg");
   height: 100vh;
@@ -91,6 +87,7 @@ ul {
           filter: brightness(0.6);
 }
 
+/*Header-Information===============*/
 .intro {
   position: absolute;
   text-align: center;
@@ -107,7 +104,7 @@ ul {
   margin-bottom: -10px;
 }
 
-button {
+.intro button {
   outline: none;
   background-color: #ff533d;
   color: #f3f3f3;
@@ -121,13 +118,13 @@ button {
   transition: opacity 1s, transform 1s, -webkit-transform 1s;
 }
 
-button:hover {
+.intro button:hover {
   cursor: pointer;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
 
-/*Step Process===========*/
+/*Step Process======================*/
 .process {
   background-color: #ffffff;
   color: #46423d;
@@ -185,25 +182,15 @@ button:hover {
   font-size: 18px;
 }
 
-#space {
-  margin-top: 160px;
-}
-
-.position {
+.details .position {
   font-style: italic;
   font-size: 14px;
 }
 
-.description {
+.details .description {
   line-height: 1.9em;
   text-align: justify;
   font-size: 17px;
-}
-
-.url {
-  color: #ff533d;
-  font-style: italic;
-  font-size: 15px;
 }
 
 .screenshots img {
@@ -223,7 +210,7 @@ button:hover {
           transform: scale(1.1);
 }
 
-/*Recommendations and Footer============*/
+/*Recommendations and Footer==========*/
 .recommendations {
   background-color: #ffffff;
   margin-bottom: 150px;
@@ -251,7 +238,7 @@ footer .icons .item {
   margin: 5px 15px;
 }
 
-/*Extra Respondsive design===*/
+/*Extra Respondsive design=============*/
 @media screen and (min-width: 1060px) {
   .details {
     width: 50%;

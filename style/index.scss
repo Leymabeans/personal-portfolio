@@ -1,4 +1,5 @@
-/*Variables====================*/
+/*Imports and Variables=============*/
+@import "generic";
 $white: #ffffff;
 $light-grey: #f3f3f3;
 $coral: #ff533d;
@@ -6,78 +7,8 @@ $light-black: #46423d;
 
 
 
-/* Generic Styling=============*/
-body {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: 'Open Sans', sans-serif;
-  text-align: center;
-  overflow-x: hidden;
-  -ms-overflow-style: -ms-autohiding-scrollbar;
-}
 
-::-webkit-scrollbar { 
-  display: none; 
-}
-
-li {
-  list-style-type: none;
-  width: 60%;
-  margin: auto;
-  
-}
-
-a {
-  text-decoration: none;
-}
-
-
-
-/*Section blocks=============*/
-.section-title {
-  font-weight: 400;
-  font-size: 21px;
-  text-align: center;
-  margin: 140px auto 5px auto;
-}
-
-.section-header {
-  width: 55%;
-  font-weight: 700;
-  font-size: 42px;
-  text-align: center;
-  margin: 0px auto 90px auto;
-}
-
-.wave {
-  width: 100%;
-  height: 150px;
-  overflow: hidden;
-
-  svg {
-    height: 100%; 
-    width: 100%;
-  }
-}
-
-ul {
-  display: grid;
-  width: 60%;
-  margin: auto;
-  align-items: center;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  grid-gap: 3rem;
-}
-
-.space {
-  margin-bottom: 200px;
-}
-
-
-
-
-/*Header=================*/
+/*Header-Parrallax==================*/
 .parrallax {
   background-image: url("../images/jumbotron.jpg");
   height: 100vh;
@@ -96,6 +27,7 @@ ul {
 
 
 
+/*Header-Information===============*/
 .intro {
   position: absolute;
   text-align: center;
@@ -109,29 +41,28 @@ ul {
     font-size: 90px;
     margin-bottom: -10px;
   }
-}
 
-
-button {
-  outline: none;
-  background-color: $coral;
-  color: $light-grey;
-  padding: 20px;
-  border: 3px;
-  border-radius: 15px;
-  margin: 5px auto;
-  transition: opacity 1s, transform 1s;
-
-  &:hover {
-    cursor: pointer;
-    transform: scale(1.1);
+  button {
+    outline: none;
+    background-color: $coral;
+    color: $light-grey;
+    padding: 20px;
+    border: 3px;
+    border-radius: 15px;
+    margin: 5px auto;
+    transition: opacity 1s, transform 1s;
+  
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.1);
+    }
   }
 }
 
 
 
 
-/*Step Process===========*/
+/*Step Process======================*/
 .process {
   background-color: $white;
   color: $light-black;
@@ -178,29 +109,17 @@ button {
   width: 70%;
   margin: 20px auto 60px auto;
   font-size: 18px;
-}
 
-#space {
-  margin-top: 160px;
+  .position {
+    font-style: italic;
+    font-size: 14px;
+  }
+  .description {
+    line-height: 1.9em;
+    text-align: justify;
+    font-size: 17px;
+  }
 }
-
-.position {
-  font-style: italic;
-  font-size: 14px;
-}
-
-.description {
-  line-height: 1.9em;
-  text-align: justify;
-  font-size: 17px;
-}
-
-.url {
-  color: $coral;
-  font-style: italic;
-  font-size: 15px;
-}
-
 
 .screenshots {
   img {
@@ -220,7 +139,7 @@ button {
 
 
 
-/*Recommendations and Footer============*/
+/*Recommendations and Footer==========*/
 .recommendations {
   background-color: $white;
   margin-bottom: 150px;
@@ -246,7 +165,7 @@ footer {
 
 
 
-/*Extra Respondsive design===*/
+/*Extra Respondsive design=============*/
 @media screen and (min-width: 1060px) {
     .details {
         width: 50%;
