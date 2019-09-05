@@ -15,6 +15,12 @@ body {
   display: none;
 }
 
+li {
+  list-style-type: none;
+  width: 60%;
+  margin: auto;
+}
+
 a {
   text-decoration: none;
 }
@@ -127,7 +133,7 @@ button:hover {
   color: #46423d;
 }
 
-.steps {
+.process .steps {
   width: 90%;
   margin-bottom: 100px;
   -webkit-transition: opacity 0.3s, -webkit-transform 0.9s;
@@ -136,32 +142,26 @@ button:hover {
   transition: transform 0.9s, opacity 0.3s, -webkit-transform 0.9s;
 }
 
-.steps:hover {
+.process .steps:hover {
   cursor: pointer;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }
 
-li {
-  list-style-type: none;
-  width: 60%;
+.process .steps h2 {
+  font-weight: 700;
+}
+
+.process .steps article {
+  font-size: 17px;
   margin: auto;
 }
 
-li img {
+.process .steps img {
   width: 80px;
   height: 80px;
   border-radius: 4px;
   margin-bottom: 30px;
-}
-
-.steps h2 {
-  font-weight: 700;
-}
-
-.steps article {
-  font-size: 17px;
-  margin: auto;
 }
 
 /*Client Review======================*/
@@ -206,7 +206,7 @@ li img {
   font-size: 15px;
 }
 
-.screenshots {
+.screenshots img {
   height: 250px;
   width: 400px;
   border-radius: 3px;
@@ -217,7 +217,7 @@ li img {
   transition: opacity 1s, transform 1s, -webkit-transform 1s;
 }
 
-.screenshots:hover {
+.screenshots img:hover {
   cursor: pointer;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
@@ -245,7 +245,7 @@ footer .icons {
   margin: 0px auto;
 }
 
-.item {
+footer .icons .item {
   width: 35px;
   height: 35px;
   margin: 5px 15px;

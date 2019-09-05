@@ -21,6 +21,13 @@ body {
   display: none; 
 }
 
+li {
+  list-style-type: none;
+  width: 60%;
+  margin: auto;
+  
+}
+
 a {
   text-decoration: none;
 }
@@ -81,11 +88,13 @@ ul {
   background-size: cover;
   position: relative;
   transition: filter 1.6s;
+
+  &:hover {
+    filter: brightness(0.6);
+  }
 }
 
-.parrallax:hover {
-  filter: brightness(0.6);
-}
+
 
 .intro {
   position: absolute;
@@ -122,47 +131,37 @@ button {
 
 
 
-
-
 /*Step Process===========*/
 .process {
   background-color: $white;
   color: $light-black;
-}
 
-.steps {
-  width: 90%;
-  margin-bottom: 100px;
-  transition: transform 0.9s, opacity 0.3s;
-}
-
-.steps:hover {
-  cursor: pointer;
-  transform: scale(1.2);
-}
-
-li {
-  list-style-type: none;
-  width: 60%;
-  margin: auto;
+  .steps {
+    width: 90%;
+    margin-bottom: 100px;
+    transition: transform 0.9s, opacity 0.3s;
   
-  img {
-  width: 80px;
-  height: 80px;
-  border-radius: 4px;
-  margin-bottom: 30px;
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.2);
+    }
+  
+    h2 {
+      font-weight: 700;
+    }
+  
+    article {
+      font-size: 17px;
+      margin: auto;
+    }
+    img {
+      width: 80px;
+      height: 80px;
+      border-radius: 4px;
+      margin-bottom: 30px;
+    }
   }
 }
-
-.steps h2 {
-  font-weight: 700;
-}
-
-.steps article {
-  font-size: 17px;
-  margin: auto;
-}
-
 
 
 
@@ -202,18 +201,22 @@ li {
   font-size: 15px;
 }
 
+
 .screenshots {
-  height: 250px;
-  width: 400px;
-  border-radius: 3px;
-  margin: 10px;
-  transition: opacity 1s, transform 1s;
+  img {
+    height: 250px;
+    width: 400px;
+    border-radius: 3px;
+    margin: 10px;
+    transition: opacity 1s, transform 1s;
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.1);
+    }
+  }
 }
 
-.screenshots:hover {
-  cursor: pointer;
-  transform: scale(1.1);
-}
 
 
 
@@ -232,14 +235,16 @@ footer {
   .icons {
     width: 50%;
     margin: 0px auto;
+
+    .item {
+      width: 35px;
+      height: 35px;
+      margin: 5px 15px;
+    }
   }
 }
 
-.item {
-  width: 35px;
-  height: 35px;
-  margin: 5px 15px;
-}
+
 
 /*Extra Respondsive design===*/
 @media screen and (min-width: 1060px) {
