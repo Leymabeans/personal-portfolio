@@ -28,6 +28,10 @@ body {
   display: none;
 }
 
+.bg {
+  background-color: #f8f6f6;
+}
+
 .heading {
   padding: 80px 0px 100px 0px;
 }
@@ -98,22 +102,21 @@ body {
   font-size: 17px;
 }
 
-/*Shape Divider======================*/
-.divide {
+/*Shape Dividers======================*/
+.slant {
   position: relative;
   height: 300px;
   background-color: #f8f6f6;
 }
 
-.divide svg {
+.slant svg {
   position: absolute;
   bottom: 0;
   width: 100%;
   height: 30vw;
 }
 
-/* Big half circle */
-#bigHalfCircle path {
+#half-circle path {
   fill: #f8f6f6;
   stroke: #f8f6f6;
 }
@@ -143,9 +146,5 @@ body {
   cursor: pointer;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
-}
-
-.bg {
-  background-color: #f8f6f6;
 }
 /*# sourceMappingURL=index.css.map */
