@@ -143,10 +143,9 @@ body {
   font-size: 17px;
 }
 
-
 .screenshot {
-  height: 330px;
-  width: 480px;
+  height: 310px;
+  border-radius: 10px;
   transition: opacity 1s, transform 1s;
 
   &:hover {
