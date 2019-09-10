@@ -1,7 +1,7 @@
 /*Colors==============================*/
 $primary-color: #ff533d;
 $background-1: #ffffff;
-$background-2: #fcf9f9;
+$background-2: #f8f6f6;
 $text: #46423d;
 
 
@@ -130,6 +130,11 @@ body {
 }
 
 
+/* Big half circle */
+#bigHalfCircle path {
+	fill: $background-2;
+	stroke: $background-2;
+}
 
 /*Client Review======================*/
 .position {
@@ -154,25 +159,6 @@ body {
   }
 }
 
-
-
-
-/*Footer============================*/
-footer {
-  display: grid;
-  align-items: center;
-  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
-  grid-gap: 5rem;
-  margin-top: 150px;
-
-  .icons {
-    width: 50%;
-    margin: 0px auto;
-
-    .item {
-      width: 35px;
-      height: 35px;
-      margin: 5px 15px;
-    }
-  }
+.bg {
+  background-color: $background-2;
 }
