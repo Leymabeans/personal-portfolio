@@ -1,0 +1,14 @@
+/*Shape Dividers======================*/
+.half-circle path {
+	fill: $background-2;
+	stroke: $background-2;
+}
+
+.slant {
+  height: 170px;
+  width: 100%;
+  
+  path {
+    fill: $background-2
+  }
+}
