@@ -48,7 +48,7 @@ body {
 
 /*Parrallax Header===================*/
 .parrallax {
-  background-image: url("../images/jumbotron.jpg");
+  background-image: url("../../images/jumbotron.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
