@@ -1,0 +1,13 @@
+//Abstracts
+@import "abstracts/colors";
+@import "abstracts/mixins";
+
+//Base
+@import "base/reset";
+@import "base/typography";
+
+//Components
+@import "components/shapes";
+
+//pages
+@import "pages/home";

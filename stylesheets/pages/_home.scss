@@ -63,9 +63,7 @@
 /*Client Review and Recommendations===*/
 .flip-card {
   background-color: transparent;
-  width: 300px;
-  height: 200px;
-  border: 1px solid #f1f1f1;
+  height: 300px;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
 
@@ -81,6 +79,7 @@
 
 /* Do an horizontal flip when you move the mouse over the flip box container */
 .flip-card:hover .flip-card-inner {
+  cursor: pointer;
   transform: rotateY(180deg);
 }
 
@@ -93,13 +92,16 @@
 }
 
 .flip-card-front {
-  background-image: url("./images/blake.jpg");
   background-color: $primary-color;
   color: white;
 }
 
 .flip-card-back {
-  background-color: #bbb;
-  color: black;
+  background-color: $primary-color;
+  color: white;
   transform: rotateY(180deg);
+}
+
+.view-project {
+  border: 5px solid $background-1;
 }

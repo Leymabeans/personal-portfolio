@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+body {
+  background-color: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+  padding: 0;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.bg {
+  background-color: #f8f6f6;
+}
+
+.heading {
+  padding: 80px 0px 100px 0px;
+}
+
+.button, .parrallax .intro .btn {
+  outline: none;
+  border: none;
+  padding: 15px;
+  margin: 5px auto;
+}
+
+/*Shape Dividers======================*/
+.half-circle path {
+  fill: #f8f6f6;
+  stroke: #f8f6f6;
+}
+
+.slant {
+  height: 170px;
+  width: 100%;
+}
+
+.slant path {
+  fill: #f8f6f6;
+}
+
+/*Parrallax Header===================*/
+.parrallax {
+  background-image: url("../images/jumbotron.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: -15px;
+  height: 100vh;
+  width: 100vw;
+}
+
+.parrallax .intro {
+  position: absolute;
+  color: #ffffff;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.parrallax .intro .btn {
+  background-color: #ff533d;
+  color: #ffffff;
+  -webkit-transition: opacity 1s, -webkit-transform 1s;
+  transition: opacity 1s, -webkit-transform 1s;
+  transition: opacity 1s, transform 1s;
+  transition: opacity 1s, transform 1s, -webkit-transform 1s;
+}
+
+.parrallax .intro .btn:hover {
+  background-color: #ff533d;
+  cursor: pointer;
+  -webkit-transform: scale(1.13);
+          transform: scale(1.13);
+}
+
+/*Step Process======================*/
+.process {
+  background-color: #f8f6f6;
+}
+
+.process .step {
+  background-color: #ffffff;
+  -webkit-box-shadow: 10px 10px 6px 5px #ccc;
+          box-shadow: 10px 10px 6px 5px #ccc;
+  border-radius: 12px;
+  -webkit-transition: 0.9s;
+  transition: 0.9s;
+}
+
+.process .step:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.process .step img {
+  width: 80px;
+  height: 80px;
+  margin: 30px 0px;
+}
+
+.process .step article {
+  font-size: 17px;
+}
+
+/*Client Review and Recommendations===*/
+.flip-card {
+  background-color: transparent;
+  height: 300px;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+  /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  -webkit-transition: -webkit-transform 0.8s;
+  transition: -webkit-transform 0.8s;
+  transition: transform 0.8s;
+  transition: transform 0.8s, -webkit-transform 0.8s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  cursor: pointer;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #ff533d;
+  color: white;
+}
+
+.flip-card-back {
+  background-color: #ff533d;
+  color: white;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.view-project {
+  border: 5px solid #ffffff;
+}
+/*# sourceMappingURL=index.css.map */
