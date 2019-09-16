@@ -14,9 +14,7 @@
     
     <!--Scroll Plugin------------------------------>
     <script src="./vendor/scroll-entrance/src/scroll-entrance.js"></script>
-    <style>
-      [data-entrance] { visibility: hidden; }
-    </style>
+    <style>[data-entrance] { visibility: hidden; }</style>
 
     <!--External files----------------------------->
     <link href="./images/favicon.ico" rel="shortcut icon">
@@ -89,51 +87,26 @@
         <h4 class="page-header text-muted">Clients</h4>
         <h1 class="display-6 font-weight-bolder">What They Say</h1>
       </hgroup>
+        
+      <!--Lame Games-->
+      <label class="col-md-4">
+        <input type="checkbox"/>
+        <div class="card">
+          <section class="front font-weight-bold">Lame Games</section>
+          <section class="back">
+            <button id="myBtn">View Project</button>
+          </section>
+        </div>
+      </label>
 
-      <!--Ello Consulting-->
-      <div class="row">
-        <section class="flip-card col-md-4">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <h1>Ello Consulting</h1>
-              <img class="img-fluid card-background" src="./images/ello/header.png">
-            </div>
-            <div class="flip-card-back">
-              
-            </div>
-          </div>
-        </section>
-  
-        <!--Lame Games-->
-        <section class="flip-card col-md-4">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <h1>Lame Games</h1>
-              <img class="img-fluid card-background" src="./images/lame-games/header.JPG">
-            </div>
-            <div class="flip-card-back">
-              
-            </div>
-          </div>
-        </section>
-
-        <!--Fuzion Data-->
-        <section class="flip-card col-md-4">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <h1>Fuzion Data</h1>
-              <img class="img-fluid card-background" src="./images/fuzion-data/header.JPG" height="300px" width="100%">
-            </div>
-            <div class="flip-card-back">
-              <section class="col-md-3"></section>
-              <h3 class="view-project col-md-6">View Project</h3>
-              <section class="col-md-3"></section>
-            </div>
-          </div>
-        </section>
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>Lame Games Content</p>
+        </div>
       </div>
     </div>
-
+    <script src="./js/index.js" rel="script" type="text/javascript"></script>
 
 
     <!--Shape Divider---------------------------->
