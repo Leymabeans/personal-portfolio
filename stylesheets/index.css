@@ -23,7 +23,7 @@ body {
   outline: none;
   border: none;
   padding: 15px;
-  margin: 5px auto;
+  margin: auto;
 }
 
 /*Shape Dividers======================*/
@@ -39,6 +39,116 @@ body {
 
 .slant path {
   fill: #f8f6f6;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover, .close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+label {
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  display: block;
+  width: 300px;
+  height: 200px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+label .card {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transition: all 600ms;
+  transition: all 600ms;
+  z-index: 20;
+}
+
+label .card section {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #FFF;
+  text-align: center;
+  line-height: 200px;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  border-radius: 2px;
+}
+
+label .card .front {
+  background-image: url("../images/lame-games/header.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 28px;
+  color: #ffffff;
+}
+
+label .card .back {
+  background: #222;
+  color: #FFF;
+  -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg);
+}
+
+label:hover .card {
+  -webkit-transform: rotateX(20deg);
+          transform: rotateX(20deg);
+  -webkit-box-shadow: 0 20px 20px rgba(50, 50, 50, 0.2);
+          box-shadow: 0 20px 20px rgba(50, 50, 50, 0.2);
+}
+
+input {
+  display: none;
+}
+
+:checked + .card {
+  -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg);
+}
+
+label:hover :checked + .card {
+  -webkit-transform: rotateX(160deg);
+          transform: rotateX(160deg);
+  -webkit-box-shadow: 0 20px 20px rgba(255, 255, 255, 0.2);
+          box-shadow: 0 20px 20px rgba(255, 255, 255, 0.2);
 }
 
 /*Parrallax Header===================*/
@@ -109,58 +219,15 @@ body {
   font-size: 17px;
 }
 
-/*Client Review and Recommendations===*/
-.flip-card {
-  background-color: transparent;
-  height: 300px;
-  -webkit-perspective: 1000px;
-          perspective: 1000px;
-  /* Remove this if you don't want the 3D effect */
+/*Recommendations========================*/
+.position {
+  font-style: italic;
+  font-size: 14px;
 }
 
-/* This container is needed to position the front and back side */
-.flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  -webkit-transition: -webkit-transform 0.8s;
-  transition: -webkit-transform 0.8s;
-  transition: transform 0.8s;
-  transition: transform 0.8s, -webkit-transform 0.8s;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-}
-
-/* Do an horizontal flip when you move the mouse over the flip box container */
-.flip-card:hover .flip-card-inner {
-  cursor: pointer;
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
-}
-
-/* Position the front and back side */
-.flip-card-front, .flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-}
-
-.flip-card-front {
-  background-color: #ff533d;
-  color: white;
-}
-
-.flip-card-back {
-  background-color: #ff533d;
-  color: white;
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
-}
-
-.view-project {
-  border: 5px solid #ffffff;
+.description {
+  line-height: 1.9em;
+  text-align: justify;
+  font-size: 17px;
 }
 /*# sourceMappingURL=index.css.map */
