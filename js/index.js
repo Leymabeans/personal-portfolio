@@ -1,20 +1,26 @@
-var modal = document.getElementById("myModal");
-var btn = document.getElementById("myBtn");
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on the button, open the modal
-btn.onclick = function() {
+function lamegames() {
+  var span = document.getElementsByClassName("close")[0];
+  var modal = document.getElementById("lamegames");
   modal.style.display = "block";
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
 }
 
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
+function ello() {
+  var span = document.getElementsByClassName("close")[1];
+  var modal = document.getElementById("ello");
+  modal.style.display = "block";
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
 }
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
+function fuzion() {
+  var span = document.getElementsByClassName("close")[2];
+  var modal = document.getElementById("fuzion");
+  modal.style.display = "block";
+  span.onclick = function() {
     modal.style.display = "none";
   }
 }
