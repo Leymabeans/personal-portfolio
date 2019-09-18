@@ -41,31 +41,31 @@
 
     <!--Step Process------------------------------>
     <div class="process">
+      <hgroup class="heading">
+        <h4 class="page-header text-muted">Process</h4>
+        <h1 class="display-6 font-weight-bolder">Keep Things Simple</h1>    
+      </hgroup>
       <div class="container">
-        <hgroup class="heading">
-          <h4 class="page-header text-muted">Process</h4>
-          <h1 class="display-6 font-weight-bolder">Keep Things Simple</h1>    
-        </hgroup>
         <div class="row pb-5">
           <section class="col-md-5 step mt-5 p-3" data-entrance="from-bottom">
             <img class="rounded" src="./images/step-1.jpg">
             <h4 class="font-weight-bold">01. Strategize</h4>
-            <article>Gather information for project by talking to real users and relaying data back to client to apply it to practical use </article>
+            <p>Gather information for project by talking to real users and relaying data back to client to apply it to practical use </p>
           </section>
           <section class="col-md-5 offset-md-2 step mt-5 p-3" data-entrance="from-bottom">
             <img class="rounded" src="./images/step-2.jpg">
             <h4 class="font-weight-bold">02. Design</h4>
-            <article>Use collected data and client input to create layout that encaptures project outlines with correct UI/UX for the all parties</article>
+            <p>Use collected data and client input to create layout that encaptures project outlines with correct UI/UX for the all parties</p>
           </section>
           <section class="col-md-5 step mt-5 p-3" data-entrance="from-bottom">
             <img class="rounded" src="./images/step-3.jpg">
             <h4 class="font-weight-bold">03. Develop</h4>
-            <article>Using designs and wireframes as a guidline, carefully develop and test software to ensure quality of the product to every detail</article>
+            <p>Using designs and wireframes as a guidline, carefully develop and test software to ensure quality of the product to every detail</p>
           </section>
           <section class="col-md-5 offset-md-2 step mt-5 p-3" data-entrance="from-bottom">
             <img class="rounded" src="./images/step-4.jpg">
             <h4 class="font-weight-bold">04. Launch</h4>
-            <article>Wrap up and deploy software, bringing the product to life and take it to the markets for the world</article>
+            <p>Wrap up and deploy software, bringing the product to life and take it to the markets for the world</p>
           </section>
         </div>  
       </div>
@@ -79,16 +79,17 @@
     </svg>
 
 
-    <!--Client Projects---------------------------->
-    <div class="container">
-      <hgroup class="heading">
-        <h4 class="page-header text-muted">Clients</h4>
-        <h1 class="display-6 font-weight-bolder">What They Say</h1>
-      </hgroup>
 
-      <!--Lame Games-->
-      <div class="row mt-5">
-        <label class="col-md-6">
+    <!--Client Projects---------------------------->
+    <hgroup class="heading">
+      <h4 class="page-header text-muted">Clients</h4>
+      <h1 class="display-6 font-weight-bolder">What They Say</h1>
+    </hgroup>
+
+    <!--Lame Games-->
+    <div class="container-fluid">
+      <div class="row mt-3">
+        <label class="col-md-4">
           <input type="checkbox"/>
           <div class="card">
             <section class="front">
@@ -102,7 +103,7 @@
         </label>
 
         <!--Ello Consulting-->
-        <label class="col-md-6">
+        <label class="col-md-4">
           <input type="checkbox"/>
           <div class="card">
             <section class="front">
@@ -113,11 +114,9 @@
             </section>
           </div>
         </label>
-      </div>
 
         <!--Fuzion Data-->
-      <div class="row mt-5">
-        <label class="col-md-6">
+        <label class="col-md-4">
           <input type="checkbox"/>
           <div class="card">
             <section class="front">
@@ -132,45 +131,118 @@
     </div>
     <script src="./js/index.js" rel="script" type="text/javascript"></script>
 
-    <!--Client Information---------------------------->
+
+
+    <!--Client Information-------------------------->
     <div id="lamegames" class="modal">
       <div class="modal-content">
-        <span class="close">&times;</span>
-        <p>Lame Games Content</p>
+        <header class="modal-header">
+          <h3 class="modal-title">Lame Games</h3>
+          <span class="close">&times;</span>
+        </header>
+        <main class="modal-body">
+          <div class="row mb-5">
+            <section class="col-md-3 mt-5">
+              <h2 data-entrance="from-left">Andrew Zwiefel</h2>
+              <h3 class="position" data-entrance="from-left">Co-Founder of Lame Games</h3>
+            </section>
+            <section class="col-md-3 mt-5">
+              <p class="font-weight-bold">________</p>
+            </section>
+            <section class="col-md-6">
+              <article class="description" data-entrance="from-right">"Detail oriented, intelligent, deadline oriented and broad-minded developer; has vast knowledge and is thorough. Thanks to interpersonal skills, Nathan has great relations with both company clients and potential customers. Is able to work in a fast-paced environment, and highly recommended."</article>
+            </section>
+          </div>
+          <div class="row">
+            <img class="col-md-6 img-responsive" src="images/lame-games/header.JPG">
+            <img class="col-md-6 img-responsive" src="images/lame-games/profile.JPG">
+          </div>
+          <div class="row mt-5">
+            <img class="col-md-6 img-responsive" src="images/lame-games/login.JPG">
+            <img class="col-md-6 img-responsive" src="images/lame-games/dashboard.JPG">
+          </div>
+        </main>
       </div>
     </div>
 
     <div id="ello" class="modal">
       <div class="modal-content">
-        <span class="close">&times;</span>
-        <p>Ello Content</p>
+        <header class="modal-header">
+          <h3 class="modal-title">Ello Consulting</h3>
+          <span class="close">&times;</span>
+        </header>
+        <main class="modal-body">
+          <div class="row mb-5">
+            <section class="col-md-3 mt-5">
+              <h2 data-entrance="from-left">Greg Marinello</h2>
+              <h3 class="position" data-entrance="from-left">CEO of Ello Consulting</h3>
+            </section>
+            <section class="col-md-3 mt-5">
+              <p class="font-weight-bold">________</p>
+            </section>
+            <section class="col-md-6">
+              <article class="description" data-entrance="from-right">"Working with Nathan was a clean, and efficient experience. Being a bit on the younger side, he brought a lot of new, modern designs to the table. I could always rely on him to meet deadlines, and would truly recommend him to anyone out there looking for a developer. Without him, our business would not be the same!"</article>
+            </section>
+          </div>
+          <div class="row">
+            <img class="col-md-6 img-responsive" src="images/ello/header.png">
+            <img class="col-md-6 img-responsive" src="images/ello/process.png">
+          </div>
+          <div class="row mt-5">
+            <img class="col-md-6 img-responsive" src="images/ello/contact.png">
+            <img class="col-md-6 img-responsive" src="images/ello/process2.png">
+          </div>
+        </main>
       </div>
     </div>
 
     <div id="fuzion" class="modal">
       <div class="modal-content">
-        <span class="close">&times;</span>
-        <p>Fuzion Content</p>
+        <header class="modal-header">
+          <h3 class="modal-title">Fuzion Data Solutions</h3>
+          <span class="close">&times;</span>
+        </header>
+        <main class="modal-body">
+          <div class="row mb-5">
+            <section class="col-md-3 mt-5">
+              <h2 data-entrance="from-left">Tristan Smith</h2>
+              <h3 class="position" data-entrance="from-left">Backend Developer</h3>
+            </section>
+            <section class="col-md-3 mt-5">
+              <p class="font-weight-bold">________</p>
+            </section>
+            <section class="col-md-6">
+              <article class="description" data-entrance="from-right">"As a fellow developer I had a great experience collaborating with Nathan. We had very good energy together and he was able to adapt to any problems that arose."</article>
+            </section>
+          </div>
+          <div class="row">
+            <img class="col-md-6 img-responsive" src="images/fuzion-data/area.JPG">
+            <img class="col-md-6 img-responsive" src="images/fuzion-data/b2b.JPG">
+          </div>
+          <div class="row mt-5">
+            <img class="col-md-6 img-responsive" src="images/fuzion-data/information2.JPG">
+            <img class="col-md-6 img-responsive" src="images/fuzion-data/prompt.JPG">
+          </div>
+        </main>
       </div>
     </div>
     
 
-
     <!--Shape Divider---------------------------->
-    <svg class="half-circle" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 100" preserveAspectRatio="none">
+    <svg class="half-circle" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 100 100" preserveAspectRatio="none">
       <path d="M0 100 C40 0 60 0 100 100 Z" />
     </svg>
 
 
-    <!--Recommendations------------------------>
+    <!--Recommendations-------------------------->
     <div class="bg">
-      <div class="container">
-        <hgroup class="heading">
-          <h4 class="page-header text-muted">Recommendations</h4>
-          <h1 class="display-6 font-weight-bolder">They Matter Too</h1>
-        </hgroup>
+      <hgroup class="heading">
+        <h4 class="page-header text-muted">Recommendations</h4>
+        <h1 class="display-6 font-weight-bolder">They Matter Too</h1>
+      </hgroup>
     
-        <!--Blake Connally-->
+      <!--Blake Connally-->
+      <div class="container">
         <div class="row">
           <section class="col-md-4">
               <img class="img-fluid rounded mb-3" src="images/blake.jpg">
@@ -185,26 +257,20 @@
     </div>
     
     
-
-    
-    <!--Footer================================================-->
+    <!--Footer---------------------------------->
     <footer class="bg">
       <div class="container">
         <div class="row pt-5">
-          <section class="col-md-5">
-          </section>
-          <section class="col-md-2">
-            <a class="ml-2" href="https://www.linkedin.com/in/nathan-ley" target="_blank">
-              <img class="img-fluid" src="./images/linkedin.png" height="35px" width="35px">
+          <section class="col-md-4 offset-md-4">
+            <a href="https://www.linkedin.com/in/nathan-ley" target="_blank">
+              <img class="img-fluid icon" src="./images/linkedin.png">
             </a>
-            <a class="ml-2" href="https://www.instagram.com/_nathanley" target="_blank">
-              <img class="img-fluid" src="./images/instagram.png" height="35px" width="35px">
+            <a href="https://www.instagram.com/_nathanley" target="_blank">
+              <img class="img-fluid icon" src="./images/instagram.png">
             </a>
-            <a class="ml-2" href="https://www.github.com/nathanleysgit" target="_blank">
-              <img class="img-fluid" src="./images/github.png" height="35px" width="35px">
+            <a href="https://www.github.com/nathanleysgit" target="_blank">
+              <img class="img-fluid icon" src="./images/github.png">
             </a>
-          </section>
-          <section class="col-md-5">
           </section>
         </div>
       </div>
