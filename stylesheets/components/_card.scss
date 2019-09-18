@@ -2,15 +2,17 @@ label {
   perspective: 1000px;
   transform-style: preserve-3d;
   display: block;
-  width: 300px;
   height: 250px;
-  transform: translate(-50%, -50%);
   cursor: pointer;
 
   input {
     display: none;
   }
 
+  &:hover .card {
+    transform: rotateX(20deg);
+    box-shadow: 0 20px 20px rgba(50,50,50,.2);
+  }
   .card {
     position: relative;
     height: 100%;
@@ -54,17 +56,12 @@ label {
         height: 10%;
         width: 150px;
       }
+      :hover {
+        cursor: pointer;
+      }
     } 
   }
 }
-
-
-  label:hover .card {
-  transform: rotateX(20deg);
-  box-shadow: 0 20px 20px rgba(50,50,50,.2);
-}
-
-
 
 :checked + .card {
   transform: rotateX(180deg);
