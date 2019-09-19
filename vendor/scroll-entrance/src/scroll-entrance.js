@@ -1,4 +1,3 @@
-
 (function() {
 
       //Create the object for the entrance plugin
