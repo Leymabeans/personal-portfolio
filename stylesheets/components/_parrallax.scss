@@ -1,0 +1,27 @@
+.parrallax {
+  @include bg-image("../images/jumbotron.jpg");
+  margin-left: -15px;
+  height: 100vh;
+  width: 100vw;
+
+  .intro {
+    position: absolute;
+    color: $background-1;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    .btn {
+      @extend .button;
+      background-color: $primary-color;
+      color: $background-1;
+      transition: opacity 1s, transform 1s;
+    
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.13);
+      }
+    }
+  }
+}
