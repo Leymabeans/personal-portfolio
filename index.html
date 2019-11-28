@@ -13,12 +13,12 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     
     <!--Scroll Plugin------------------------------>
-    <script src="./js/vendor/scroll-entrance/scroll-entrance.js"></script>
+    <script src="./js/vendor/scroll-entrance.js"></script>
     <style>[data-entrance] { visibility: hidden; }</style>
 
     <!--External files----------------------------->
-    <link href="./images/favicon.ico" rel="shortcut icon">
-    <link href="./stylesheets/index.css" rel="stylesheet" type="text/css">
+    <link href="./assets/favicon.ico" rel="shortcut icon">
+    <link href="./style/index.css" rel="stylesheet" type="text/css">
     <script src="./js/index.js" rel="script" type="text/javascript"></script>
   </head>
 
@@ -26,15 +26,12 @@
 
   <!--Header-------------------------------------->
   <body> 
-    <header class="container-fluid">
-      <div class="parrallax">
-        <div class="intro">
-          <h1 class="display-1 font-weight-bold">Nathan Ley</h1>
-          <p data-entrance="from-bottom">_____________</p>
-          <p data-entrance="from-bottom">Specializing in software development and product design</p><br>
-          <input type="button" class="btn btn-large" onclick="location.href='mailto:nathanley.work@gmail.com';" value="Contact Me"/>
-        </div>
-      </div>
+    <header class="container-fluid"></header>
+      <canvas id="header"></canvas>
+        <h1 class="display-1 font-weight-bold">Nathan Ley</h1>
+        <p data-entrance="from-bottom">_____________</p>
+        <p data-entrance="from-bottom">Specializing in software development and product design</p>
+      <script src="./js/header.js" rel="script" type="text/javascript"></script>
     </header>
 
 

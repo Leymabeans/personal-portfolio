@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
 body {
-  background-color: #ffffff;
+  background-color: #0D1317;
   font-family: 'Open Sans', sans-serif;
   padding: 0;
   text-align: center;
@@ -11,15 +11,11 @@ body {
   display: none;
 }
 
-.bg {
-  background-color: #f8f6f6;
-}
-
 .heading {
   padding: 80px 0px 100px 0px;
 }
 
-.button, label .card .back button, .parrallax .intro .btn {
+.button, label .card .back button {
   outline: none;
   border: none;
   padding: 15px;
@@ -88,7 +84,7 @@ label .card section {
 label .card .front {
   font-size: 30px;
   font-weight: 700;
-  color: #ffffff;
+  color: #0D1317;
 }
 
 label .card .front img {
@@ -105,7 +101,7 @@ label .card .back {
 
 label .card .back button {
   background-color: #f8f6f6;
-  color: #46423d;
+  color: #0D1317;
   font-size: 17px;
   height: 10%;
   width: 150px;
@@ -125,6 +121,28 @@ label:hover :checked + .card {
           transform: rotateX(160deg);
   -webkit-box-shadow: 0 20px 20px rgba(255, 255, 255, 0.2);
           box-shadow: 0 20px 20px rgba(255, 255, 255, 0.2);
+}
+
+/*Shape Dividers======================*/
+.half-circle {
+  width: 100%;
+  height: 110px;
+  margin-bottom: -10px;
+  margin-top: 200px;
+}
+
+.half-circle path {
+  fill: #f8f6f6;
+  stroke: #f8f6f6;
+}
+
+.slant {
+  height: 170px;
+  width: 100%;
+}
+
+.slant path {
+  fill: #f8f6f6;
 }
 
 .icon {
@@ -200,48 +218,12 @@ label:hover :checked + .card {
   }
 }
 
-.parrallax {
-  background-image: url("../images/jumbotron.jpg");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-left: -15px;
-  height: 100vh;
-  width: 100vw;
-}
-
-.parrallax .intro {
-  position: absolute;
-  color: #ffffff;
-  text-align: center;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-
-.parrallax .intro .btn {
-  background-color: #ff533d;
-  color: #ffffff;
-  -webkit-transition: opacity 1s, -webkit-transform 1s;
-  transition: opacity 1s, -webkit-transform 1s;
-  transition: opacity 1s, transform 1s;
-  transition: opacity 1s, transform 1s, -webkit-transform 1s;
-}
-
-.parrallax .intro .btn:hover {
-  cursor: pointer;
-  -webkit-transform: scale(1.13);
-          transform: scale(1.13);
-}
-
 .process {
   background-color: #f8f6f6;
 }
 
 .process .step {
-  background-color: #ffffff;
+  background-color: #0D1317;
   -webkit-box-shadow: 10px 10px 6px 5px #ccc;
           box-shadow: 10px 10px 6px 5px #ccc;
   border-radius: 12px;
@@ -261,27 +243,5 @@ label:hover :checked + .card {
 
 .process .step article {
   font-size: 17px;
-}
-
-/*Shape Dividers======================*/
-.half-circle {
-  width: 100%;
-  height: 110px;
-  margin-bottom: -10px;
-  margin-top: 200px;
-}
-
-.half-circle path {
-  fill: #f8f6f6;
-  stroke: #f8f6f6;
-}
-
-.slant {
-  height: 170px;
-  width: 100%;
-}
-
-.slant path {
-  fill: #f8f6f6;
 }
 /*# sourceMappingURL=index.css.map */
