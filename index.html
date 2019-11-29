@@ -19,19 +19,20 @@
     <!--External files----------------------------->
     <link href="./assets/favicon.ico" rel="shortcut icon">
     <link href="./style/index.css" rel="stylesheet" type="text/css">
-    <script src="./js/progress-bar.js" rel="script" type="text/javascript"></script>
   </head>
 
   
 
   <!--Header-------------------------------------->
   <body> 
-    <header class="container-fluid"></header>
+    <header class="container-fluid">
       <div class="progress-container">
         <div class="progress-bar" id="myBar"></div>
+        <script src="./js/progress-bar.js" rel="script" type="text/javascript"></script>
       </div>
-      <canvas id="header"></canvas>
-      <script src="./js/header.js" rel="script" type="text/javascript"></script>
+      <canvas id="header">
+        <script src="./js/header.js" rel="script" type="text/javascript"></script>
+      </canvas>
     </header>
 
 
@@ -42,11 +43,11 @@
       <h1 class="display-6 font-weight-bolder">What I Can Do</h1>    
     </hgroup>
 
-    <div class="container gutter">
+    <div class="container">
       <div class="row">
-        <section class="card col-md-4 col-sm-12 mt-4">
+        <section class="card col-md-4 col-sm-12 mt-2" data-entrance="from-left">
           <div class="card__image-container">
-            <img class="card__image" src="./assets/design.jpg" alt="">
+            <img class="card__image" src="./assets/design.jpg" alt="Design">
           </div>
           <svg class="card__svg" viewBox="0 0 800 500">
             <path d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400 L 800 500 L 0 500" stroke="transparent" fill="#333"/>
@@ -58,9 +59,9 @@
           </div> 
         </section>
 
-        <section class="card col-md-4 col-sm-12 mt-4">
+        <section class="card col-md-4 col-sm-12 mt-2" data-entrance="from-left">
           <div class="card__image-container">
-            <img class="card__image" src="./assets/develop.jpg" alt="">
+            <img class="card__image" src="./assets/develop.jpg" alt="Develop">
           </div>
           <svg class="card__svg" viewBox="0 0 800 500">
             <path d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400 L 800 500 L 0 500" stroke="transparent" fill="#333"/>
@@ -72,9 +73,9 @@
           </div> 
         </section>
 
-        <section class="card col-md-4 col-sm-12 mt-4">
+        <section class="card col-md-4 col-sm-12 mt-2" data-entrance="from-left">
           <div class="card__image-container">
-            <img class="card__image" src="./assets/brand.jpg" alt="">
+            <img class="card__image" src="./assets/brand.jpg" alt="Brand">
           </div>
           <svg class="card__svg" viewBox="0 0 800 500">
             <path d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400 L 800 500 L 0 500" stroke="transparent" fill="#333"/>
