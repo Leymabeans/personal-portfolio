@@ -7,7 +7,7 @@ maxRadius = 40;
 minRadius = 2;
 var circleArray = [];
 var colorArray = [
-  '#C9DAEE',
+  '#FFFFFF',
   '#03F7EE', 
   '#00B295', 
   '#191516', 
