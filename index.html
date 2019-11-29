@@ -19,7 +19,7 @@
     <!--External files----------------------------->
     <link href="./assets/favicon.ico" rel="shortcut icon">
     <link href="./style/index.css" rel="stylesheet" type="text/css">
-    <script src="./js/index.js" rel="script" type="text/javascript"></script>
+    <script src="./js/progress-bar.js" rel="script" type="text/javascript"></script>
   </head>
 
   
@@ -27,60 +27,41 @@
   <!--Header-------------------------------------->
   <body> 
     <header class="container-fluid"></header>
+      <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+      </div>
       <canvas id="header"></canvas>
-        <h1 class="display-1 font-weight-bold">Nathan Ley</h1>
-        <p data-entrance="from-bottom">_____________</p>
-        <p data-entrance="from-bottom">Specializing in software development and product design</p>
       <script src="./js/header.js" rel="script" type="text/javascript"></script>
     </header>
 
 
 
-    <!--Step Process------------------------------>
-    <div class="process">
-      <hgroup class="heading">
-        <h4 class="page-header text-muted">Process</h4>
-        <h1 class="display-6 font-weight-bolder">Keep Things Simple</h1>    
-      </hgroup>
-      <div class="container">
-        <div class="row pb-5">
-          <section class="col-md-5 step col-sm-12 mt-5 p-3" data-entrance="from-bottom">
-            <img class="rounded" src="./images/step-1.jpg">
-            <h4 class="font-weight-bold">01. Strategize</h4>
-            <p>Gather information for project by talking to real users and relaying data back to client to apply it to practical use </p>
-          </section>
-          <section class="col-md-5 offset-md-2 col-sm-12 step mt-5 p-3" data-entrance="from-bottom">
-            <img class="rounded" src="./images/step-2.jpg">
-            <h4 class="font-weight-bold">02. Design</h4>
-            <p>Use collected data and client input to create layout that encaptures project outlines with correct UI/UX for the all parties</p>
-          </section>
-          <section class="col-md-5 step col-sm-12 mt-5 p-3" data-entrance="from-bottom">
-            <img class="rounded" src="./images/step-3.jpg">
-            <h4 class="font-weight-bold">03. Develop</h4>
-            <p>Using designs and wireframes as a guidline, carefully develop and test software to ensure quality of the product to every detail</p>
-          </section>
-          <section class="col-md-5 offset-md-2 col-sm-12 step mt-5 p-3" data-entrance="from-bottom">
-            <img class="rounded" src="./images/step-4.jpg">
-            <h4 class="font-weight-bold">04. Launch</h4>
-            <p>Wrap up and deploy software, bringing the product to life and take it to the markets for the world</p>
-          </section>
-        </div>  
-      </div>
-    </div>
-    
-
-
-    <!--Shape Divider---------------------------->
-    <svg class="slant" viewBox='0 0 100 100' preserveAspectRatio='none'>
-      <path d='m 0,0 h 100 l -100,95z' id='top'/>
-    </svg>
-
-
-
-    <!--Client Projects---------------------------->
+    <!--Services------------------------------>
     <hgroup class="heading">
-      <h4 class="page-header text-muted">Clients</h4>
-      <h1 class="display-6 font-weight-bolder">What They Say</h1>
+      <h4 class="page-header text-muted">Services</h4>
+      <h1 class="display-6 font-weight-bolder">What I Can Do</h1>    
+    </hgroup>
+    <div class="container">
+      <div class="row"  data-entrance="from-bottom">
+        <section class="col-md-3"><div class="aspect"><img class="icon" src="./assets/planning.png">Planning</div></section>
+        <section class="col-md-3"><div class="aspect"><img class="icon" src="./assets/design.png">Design</div></section>
+        <section class="col-md-3"><div class="aspect"><img class="icon" src="./assets/development.png">Development</div></section>
+        <section class="col-md-3"><div class="aspect"><img class="icon" src="./assets/branding.png">Branding</div></section>
+      </div>    
+
+      <div class="row mt-3" data-entrance="from-bottom">
+        <section class="col-md-3"><p>Gather information for project by talking to real users and relaying data back to client to apply it to practical use </p></section>
+        <section class="col-md-3"><p>Use collected data and client input to create layout that encaptures project outlines with correct UI/UX for the all parties</p></section>
+        <section class="col-md-3"><p>Using designs and wireframes as a guidline, carefully develop and test software to ensure quality of the product to every detail</p></section>
+        <section class="col-md-3"><p>In today's world, it is all about standing out! Let me help you bring your company out from average and see more conversions</p></section>
+      </div> 
+    </div>
+
+
+    <!--Portfolio---------------------------->
+    <hgroup class="heading">
+      <h4 class="page-header text-muted">Portfolio</h4>
+      <h1 class="display-6 font-weight-bolder">Work Speaks For Itself</h1>
     </hgroup>
 
     <!--Lame Games-->
