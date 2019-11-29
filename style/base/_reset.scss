@@ -1,17 +1,14 @@
 body {
-  background-color: $background-1;
+  background-color: $dark;
   font-family: 'Open Sans', sans-serif;
   padding: 0;
+  margin: 0;
   text-align: center;
   overflow-x: hidden;
 }
 
 ::-webkit-scrollbar { 
   display: none; 
-}
-
-.bg {
-  background-color: $background-2;
 }
 
 .heading {

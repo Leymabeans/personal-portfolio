@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+body {
+  background-color: #0D1317;
+  font-family: 'Open Sans', sans-serif;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.heading {
+  padding: 80px 0px 100px 0px;
+}
+
+.button {
+  outline: none;
+  border: none;
+  padding: 15px;
+  margin: auto;
+}
+
+.position {
+  font-style: italic;
+  font-size: 14px;
+}
+
+.description {
+  line-height: 1.9em;
+  text-align: justify;
+  font-size: 17px;
+}
+
+article {
+  text-indent: 30px;
+}
+
+/*Shape Dividers======================*/
+.half-circle {
+  width: 100%;
+  height: 110px;
+  margin-bottom: -10px;
+  margin-top: 200px;
+}
+
+.half-circle path {
+  fill: #0D1317;
+  stroke: #0D1317;
+}
+
+.slant {
+  height: 170px;
+  width: 100%;
+}
+
+.slant path {
+  fill: #0D1317;
+}
+
+h1, p {
+  color: #ffffff;
+}
+
+.progress-container {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  height: 8px;
+  background: #0D1317;
+}
+
+.progress-container .progress-bar {
+  height: 8px;
+  background-color: #03F7EE;
+  width: 0%;
+}
+
+.aspect {
+  width: 100%;
+  border-radius: 3%;
+  text-align: center;
+  font-size: 21px;
+  padding: 15% 0;
+  line-height: 0;
+  position: relative;
+  background: #03F7EE;
+  color: #0D1317;
+}
+
+.aspect .icon {
+  width: 30px;
+  height: 30px;
+  margin: 0px 3px 8px 0px;
+}
+/*# sourceMappingURL=index.css.map */
