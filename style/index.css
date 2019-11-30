@@ -60,10 +60,6 @@ article {
   fill: #0D1317;
 }
 
-h1, p {
-  color: #ffffff;
-}
-
 .progress-container {
   position: fixed;
   top: 0;
@@ -79,7 +75,82 @@ h1, p {
   width: 0%;
 }
 
+.data-box {
+  z-index: 2;
+}
+
+#fade1, #fade2, #fade3 {
+  opacity: 0;
+}
+
+.bg-black-transparent {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.w-92 {
+  width: 27rem;
+}
+
+.p-6 {
+  padding: 1rem;
+}
+
+.main-div {
+  margin-top: 600px;
+}
+
+canvas {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.wrapper {
+  margin: 20px;
+}
+
+#intro {
+  position: relative;
+  top: 5rem;
+  margin: 0 auto;
+  font-family: 'Arsenal', sans-serif;
+  color: #fff;
+  text-align: center;
+  width: 1px;
+  height: 1px;
+}
+
+canvas {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.wrapper {
+  margin: 20px;
+}
+
+.outer-div {
+  text-align: center;
+  font-family: 'Arsenal', sans-serif;
+  color: #fff;
+}
+
 .card {
+  position: relative;
+  top: 0;
   background: #333;
   height: 75vh;
   border-radius: 6px;
@@ -88,6 +159,13 @@ h1, p {
   -webkit-box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2), 0 0 1rem rgba(0, 0, 0, 0.2);
           box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2), 0 0 1rem rgba(0, 0, 0, 0.2);
   overflow: hidden;
+  -webkit-transition: top ease 0.5s;
+  transition: top ease 0.5s;
+}
+
+.card:hover {
+  cursor: none;
+  top: -10px;
 }
 
 .card img {
