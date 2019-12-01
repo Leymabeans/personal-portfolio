@@ -1,79 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!--Meta Data--------------------------------->
+    <!--Meta Data------------------------------->
     <title>Nathan Ley | Fullstack Developer</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!--Bootstrap--------------------------------->
+    <!--Bootstrap------------------------------->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     
-    <!--Scroll Plugin------------------------------>
+    <!--Scroll Plugin--------------------------->
     <script src="./js/vendor/scroll-entrance.js"></script>
     <style>[data-entrance] { visibility: hidden; }</style>
 
-    <!--External files----------------------------->
+    <!--External files-------------------------->
     <link href="./assets/favicon.ico" rel="shortcut icon">
     <link href="./style/index.css" rel="stylesheet" type="text/css">
   </head>
 
   
 
-  <!--Header-------------------------------------->
+  <!--Header------------------------------------>
   <body> 
     <header class="container-fluid">
+
       <div class="progress-container">
         <div class="progress-bar" id="myBar"></div>
         <script src="./js/progress-bar.js" rel="script" type="text/javascript"></script>
       </div>
+
       <canvas id="header">
         <script src="./js/header.js" rel="script" type="text/javascript"></script>
       </canvas>
 
-      <div class="wrapper col-md-12">
+      <div class="intro col-md-12">
         <h1>Nathan Ley</h1>
         <p>I create digital solutions for businesses and individuals</p>
+        <input type="button" class="btn btn-primary button" onclick="location.href='mailto:nathanley.work@gmail.com';" value="Contact Me"/>
       </div>
     </header>
 
 
 
-    <!--Services------------------------------>
+    <!--Services-------------------------------->
     <hgroup class="heading">
-      <h4 class="page-header text-muted">Services</h4>
-      <h1 class="display-6 font-weight-bolder">What I Can Do</h1>    
+      <h4>Services</h4>
+      <h1>What I Do</h1>    
     </hgroup>
 
+    <!--Design-->
     <div class="container">
       <div class="row">
-        <section class="card col-md-5 col-sm-12 mt-3" data-entrance="from-left">
-          <div class="card__image-container">
-            <img class="card__image" src="./assets/design.jpg" alt="Design">
+        <section class="service col-md-5 col-sm-12 mt-3" data-entrance="from-left">
+          <div class="service__image-container">
+            <img class="service__image" src="./assets/design.jpg" alt="Design">
           </div>
-          <svg class="card__svg" viewBox="0 0 800 500">
+          <svg class="service__svg" viewBox="0 0 800 500">
             <path d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400 L 800 500 L 0 500" stroke="transparent" fill="#333"/>
-            <path class="card__line" d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400" stroke="pink" stroke-width="3" fill="transparent"/>
+            <path class="service__line" d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400" stroke="pink" stroke-width="3" fill="transparent"/>
           </svg>
-          <div class="card__content">
-            <h1 class="card__title">Design</h1>
+          <div class="service__content">
+            <h1 class="service__title">Design</h1>
             <p>Use collected data and client input to create layout that encaptures project outlines. A great design makes your company stand out and allows you to see more conversions</p>
           </div> 
         </section>
-
-        <section class="card col-md-5 offset-md-2 col-sm-12 mt-3" data-entrance="from-left">
-          <div class="card__image-container">
-            <img class="card__image" src="./assets/develop.jpg" alt="Develop">
+        <!--Develop-->
+        <section class="service col-md-5 offset-md-2 col-sm-12 mt-3" data-entrance="from-left">
+          <div class="service__image-container">
+            <img class="service__image" src="./assets/develop.jpg" alt="Develop">
           </div>
-          <svg class="card__svg" viewBox="0 0 800 500">
+          <svg class="service__svg" viewBox="0 0 800 500">
             <path d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400 L 800 500 L 0 500" stroke="transparent" fill="#333"/>
-            <path class="card__line" d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400" stroke="pink" stroke-width="3" fill="transparent"/>
+            <path class="service__line" d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400" stroke="pink" stroke-width="3" fill="transparent"/>
           </svg>
-          <div class="card__content">
-            <h1 class="card__title">Develop</h1>
+          <div class="service__content">
+            <h1 class="service__title">Develop</h1>
             <p>Using wireframes and other design tools as a guidline, carefully develop to ensure easy access of information and to users while adding the functionality your company needs.</p>
           </div> 
         </section>
@@ -81,198 +85,88 @@
     </div>
 
 
-    <!--Portfolio---------------------------->
+    <!--Portfolio------------------------------->
     <hgroup class="heading">
-      <h4 class="page-header text-muted">Portfolio</h4>
-      <h1 class="display-6 font-weight-bolder">Work Speaks For Itself</h1>
+      <h4>Portfolio</h4>
+      <h1>Work Speaks For Itself</h1>
     </hgroup>
 
-    <!--Lame Games-->
-    <div class="container">
-      <div class="row mt-3">
-        <label class="col-md-4 col-sm-12">
-          <input type="checkbox"/>
-          <div class="card">
-            <section class="front">
-              <img src="images/lame-games/header.JPG">
-            </section>
-            <section class="back">
-              <button onclick="lamegames()">View Project</button>
-              <span class="glyphicon glyphicon-menu-right"></span>
-            </section>
-          </div>
-        </label>
-
-        <!--Ello Consulting-->
-        <label class="col-md-4 col-sm-12">
-          <input type="checkbox"/>
-          <div class="card">
-            <section class="front">
-              <img src="images/ello/header.png">
-            </section>
-            <section class="back">
-              <button onclick="ello()">View Project</button>
-            </section>
-          </div>
-        </label>
-
-        <!--Fuzion Data-->
-        <label class="col-md-4 col-sm-12">
-          <input type="checkbox"/>
-          <div class="card">
-            <section class="front">
-              <img src="images/fuzion-data/header.JPG">
-            </section>
-            <section class="back">
-              <button onclick="fuzion()">View Project</button>
-            </section>
-          </div>
-        </label>
-      </div>
-    </div>
-    <script src="./js/index.js" rel="script" type="text/javascript"></script>
-
-
-
-    <!--Client Information-------------------------->
-    <div id="lamegames" class="modal">
-      <div class="modal-content">
-        <header class="modal-header">
-          <h3 class="modal-title">Lame Games</h3>
-          <span class="close">&times;</span>
-        </header>
-        <main class="modal-body">
-          <div class="row mb-5">
-            <section class="col-md-3 mt-5">
-              <h2 data-entrance="from-left">Andrew Zwiefel</h2>
-              <h3 class="position" data-entrance="from-left">Co-Founder of Lame Games</h3>
-            </section>
-            <section class="col-md-3 mt-5">
-              <p class="font-weight-bold">________</p>
-            </section>
-            <section class="col-md-6">
-              <article class="description" data-entrance="from-right">"Detail oriented, intelligent, deadline oriented and broad-minded developer; has vast knowledge and is thorough. Thanks to interpersonal skills, Nathan has great relations with both company clients and potential customers. Is able to work in a fast-paced environment, and highly recommended."</article>
-            </section>
-          </div>
-          <div class="row">
-            <img class="col-md-6 img-fluid" src="images/lame-games/header.JPG">
-            <img class="col-md-6 img-fluid" src="images/lame-games/profile.JPG">
-          </div>
-          <div class="row mt-5">
-            <img class="col-md-6 img-fluid" src="images/lame-games/login.JPG">
-            <img class="col-md-6 img-fluid" src="images/lame-games/dashboard.JPG">
-          </div>
-        </main>
-      </div>
-    </div>
-
     <!--Ello Consulting-->
-    <div id="ello" class="modal">
-      <div class="modal-content">
-        <header class="modal-header">
-          <h3 class="modal-title">Ello Consulting</h3>
-          <span class="close">&times;</span>
-        </header>
-        <main class="modal-body">
-          <div class="row mb-5">
-            <section class="col-md-3 mt-5">
-              <h2 data-entrance="from-left">Greg Marinello</h2>
-              <h3 class="position" data-entrance="from-left">CEO of Ello Consulting</h3>
-            </section>
-            <section class="col-md-3 mt-5">
-              <p class="font-weight-bold">________</p>
-            </section>
-            <section class="col-md-6">
-              <article class="description" data-entrance="from-right">"Working with Nathan was a clean, and efficient experience. Being a bit on the younger side, he brought a lot of new, modern designs to the table. I could always rely on him to meet deadlines, and would truly recommend him to anyone out there looking for a developer. Without him, our business would not be the same!"</article>
-            </section>
-          </div>
-          <div class="row">
-            <img class="col-md-6 img-responsive" src="images/ello/header.png">
-            <img class="col-md-6 img-responsive" src="images/ello/process.png">
-          </div>
-          <div class="row mt-5">
-            <img class="col-md-6 img-responsive" src="images/ello/contact.png">
-            <img class="col-md-6 img-responsive" src="images/ello/process2.png">
-          </div>
-        </main>
+    <div class="container-fluid">
+      <div class="row mt-3">
+        <section class="card col-md-6">
+          <a href="./projects/ello-consulting.html">
+            <img class="card-img" src=".//assets/ello/header.png" alt="Avatar">
+          </a>
+        </section>
+        <!--Fuzion Data-->
+        <section class="card col-md-6">
+          <a href="./projects/saint-alm.html">
+            <img class="card-img" src=".//assets/saint-alm/header.JPG" alt="Avatar">
+          </a>
+        </section>
+      </div>
+      <!--Lame Games-->
+      <div class="row">
+        <section class="card col-md-6">
+          <a href="./projects/lame-games.html">
+            <img class="card-img" src=".//assets/lame-games/header.JPG" alt="Avatar">
+          </a>
+        </section>
+        <!--Saint ALM-->
+        <section class="card col-md-6">
+          <a href="./projects/fuzion-data.html">
+            <img class="card-img" src=".//assets/fuzion-data/header.JPG" alt="Avatar">
+          </a>
+        </section>
       </div>
     </div>
 
-    <!--Fuzion Data-->
-    <div id="fuzion" class="modal">
-      <div class="modal-content">
-        <header class="modal-header">
-          <h3 class="modal-title">Fuzion Data Solutions</h3>
-          <span class="close">&times;</span>
-        </header>
-        <main class="modal-body">
-          <div class="row mb-5">
-            <section class="col-md-3 mt-5">
-              <h2 data-entrance="from-left">Tristan Smith</h2>
-              <h3 class="position" data-entrance="from-left">Backend Developer</h3>
-            </section>
-            <section class="col-md-3 mt-5">
-              <p class="font-weight-bold">________</p>
-            </section>
-            <section class="col-md-6">
-              <article class="description" data-entrance="from-right">"As a fellow developer I had a great experience collaborating with Nathan. We had very good energy together and he was able to adapt to any problems that arose."</article>
-            </section>
-          </div>
-          <div class="row">
-            <img class="col-md-6 img-responsive" src="images/fuzion-data/area.JPG">
-            <img class="col-md-6 img-responsive" src="images/fuzion-data/b2b.JPG">
-          </div>
-          <div class="row mt-5">
-            <img class="col-md-6 img-responsive" src="images/fuzion-data/information2.JPG">
-            <img class="col-md-6 img-responsive" src="images/fuzion-data/prompt.JPG">
-          </div>
-        </main>
+
+    <!--Recommendations------------------------->
+    <hgroup class="heading">
+      <h4>Recommendations</h4>
+      <h1>They Matter Too</h1>
+    </hgroup>
+    
+    <!--Blake Connally-->
+    <div class="container">
+      <div class="row">
+        <section class="col-md-4">
+            <img class="img-fluid rounded mb-3" src="assets/blake.jpg">
+          <h2 class="name">Blake Connally</h2>
+          <h3 class="position">CEO of Modsi</h3><br>
+        </section>
+        <section class="col-md-6 offset-md-2">
+          <article>"Nathan was awesome to work with. He went above and beyond what was required of him for the project. He is highly experienced in what he does and I would recommend him to anyone. My favorite part is he is self-managed, has great communication and delivers quality work at the end of the day. Someone like him is extremely hard to find on this platform. Highly recommended."</article>
+        </section>
+      </div>
+      <!--Brad Zerafa-->
+      <div class="row mt-5">
+        <section class="col-md-4">
+          <img class="img-fluid rounded mb-3" src="assets/brad.jpeg">
+          <h2 class="name">Brad Zerafa</h2>
+          <h3 class="position">Fullstack Freelancer</h3><br>
+        </section>
+        <section class="col-md-6 offset-md-2">
+          <article>"Nathan was awesome to work with. He went above and beyond what was required of him for the project. He is highly experienced in what he does and I would recommend him to anyone. My favorite part is he is self-managed, has great communication and delivers quality work at the end of the day. Someone like him is extremely hard to find on this platform. Highly recommended."</article>
+        </section>
       </div>
     </div>
-    
-
-    <!--Shape Divider---------------------------->
-    <svg class="half-circle" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 100 100" preserveAspectRatio="none">
-      <path d="M0 100 C40 0 60 0 100 100 Z" />
-    </svg>
-
-
-    <!--Recommendations-------------------------->
-    <div class="bg">
-      <hgroup class="heading">
-        <h4 class="page-header text-muted">Recommendations</h4>
-        <h1 class="display-6 font-weight-bolder">They Matter Too</h1>
-      </hgroup>
-    
-      <!--Blake Connally-->
-      <div class="container">
-        <div class="row">
-          <section class="col-md-4">
-              <img class="img-fluid rounded mb-3" src="images/blake.jpg">
-            <h2>Blake Connally</h2>
-            <h3 class="position">CEO of Modsi</h3><br>
-          </section>
-          <section class="col-md-6 offset-md-2">
-            <article class="description">"Nathan was awesome to work with. He went above and beyond what was required of him for the project. He is highly experienced in what he does and I would recommend him to anyone. My favorite part is he is self-managed, has great communication and delivers quality work at the end of the day. Someone like him is extremely hard to find on this platform. Highly recommended."</article>
-          </section>
-        </div>
-      </div>
-    </div>
-    
     
     <!--Footer---------------------------------->
-    <footer class="bg">
+    <footer>
       <div class="container">
         <div class="row pt-5">
           <section class="col-md-4 offset-md-4">
             <a href="https://www.linkedin.com/in/nathan-ley" target="_blank">
-              <img class="img-fluid icon" src="./images/linkedin.png">
+              <img class="img-fluid icon" src="./assets/social-media/linkedin.png">
             </a>
             <a href="https://www.instagram.com/_nathanley" target="_blank">
-              <img class="img-fluid icon" src="./images/instagram.png">
+              <img class="img-fluid icon" src="./assets/social-media/instagram.png">
             </a>
             <a href="https://www.github.com/nathanleysgit" target="_blank">
-              <img class="img-fluid icon" src="./images/github.png">
+              <img class="img-fluid icon" src="./assets/social-media/github.png">
             </a>
           </section>
         </div>
