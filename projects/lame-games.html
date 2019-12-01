@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--Meta Data--------------------------------->
+    <title>Mello Development</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Bootstrap--------------------------------->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    
+    <!--Scroll Plugin------------------------------>
+    <script src="../js/vendor/scroll-entrance.js"></script>
+    <style>[data-entrance] { visibility: hidden; }</style>
+
+    <!--External files----------------------------->
+    <link href="../assets/favicon.ico" rel="shortcut icon">
+    <link href="../style/index.css" rel="stylesheet" type="text/css">
+  </head>
+
+  <!--Header-------------------------------------->
+  <body> 
+    <header class="container-fluid">
+      <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+        <script src="./js/progress-bar.js" rel="script" type="text/javascript"></script>
+      </div>
+    </header>
+
+    <div id="lamegames" class="modal">
+      <div class="modal-content">
+        <header class="modal-header">
+          <h3 class="modal-title">Lame Games</h3>
+          <span class="close">&times;</span>
+        </header>
+        <main class="modal-body">
+          <div class="row mb-5">
+            <section class="col-md-3 mt-5">
+              <h2 data-entrance="from-left">Andrew Zwiefel</h2>
+              <h3 class="position" data-entrance="from-left">Co-Founder of Lame Games</h3>
+            </section>
+            <section class="col-md-3 mt-5">
+              <p class="font-weight-bold">________</p>
+            </section>
+            <section class="col-md-6">
+              <article class="description" data-entrance="from-right">"Detail oriented, intelligent, deadline oriented and broad-minded developer; has vast knowledge and is thorough. Thanks to interpersonal skills, Nathan has great relations with both company clients and potential customers. Is able to work in a fast-paced environment, and highly recommended."</article>
+            </section>
+          </div>
+          <div class="row">
+            <img class="col-md-6 img-fluid" src="images/lame-games/header.JPG">
+            <img class="col-md-6 img-fluid" src="images/lame-games/profile.JPG">
+          </div>
+          <div class="row mt-5">
+            <img class="col-md-6 img-fluid" src="images/lame-games/login.JPG">
+            <img class="col-md-6 img-fluid" src="images/lame-games/dashboard.JPG">
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>
