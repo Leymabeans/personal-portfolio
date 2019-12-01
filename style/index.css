@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
 body {
   background-color: #0D1317;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
   margin: 0;
   text-align: center;
@@ -16,48 +18,13 @@ body {
   padding: 150px 0px 80px 0px;
 }
 
-.button {
-  outline: none;
-  border: none;
-  padding: 15px;
-  margin: auto;
+.heading h1 {
+  font-weight: 700;
+  color: #FFFFFF;
 }
 
-.position {
-  font-style: italic;
-  font-size: 14px;
-}
-
-.description {
-  line-height: 1.9em;
-  text-align: justify;
-  font-size: 17px;
-}
-
-article {
-  text-indent: 30px;
-}
-
-/*Shape Dividers======================*/
-.half-circle {
-  width: 100%;
-  height: 110px;
-  margin-bottom: -10px;
-  margin-top: 200px;
-}
-
-.half-circle path {
-  fill: #0D1317;
-  stroke: #0D1317;
-}
-
-.slant {
-  height: 170px;
-  width: 100%;
-}
-
-.slant path {
-  fill: #0D1317;
+.heading h4 {
+  color: gray;
 }
 
 .progress-container {
@@ -75,25 +42,37 @@ article {
   width: 0%;
 }
 
-.wrapper {
+.intro {
   position: absolute;
   top: 30%;
   color: #FFFFFF;
 }
 
-.wrapper h1 {
+.intro h1 {
   font-size: 130px;
-  font-weight: bold;
+  font-weight: 700;
 }
 
-.wrapper p {
-  margin-top: 15px;
+.intro p {
+  font-size: 18px;
 }
 
-.card {
+.intro .button {
+  background-color: #02ada7;
+  outline: none;
+  border: none;
+  padding: 20px 35px;
+  margin: 25px auto;
+}
+
+.intro .button:hover {
+  background-color: #03F7EE;
+}
+
+.service {
   position: relative;
   top: 0;
-  background: #333;
+  background-color: #333;
   height: 75vh;
   border-radius: 6px;
   padding: 2rem;
@@ -105,46 +84,46 @@ article {
   transition: top ease 0.5s;
 }
 
-.card:hover {
+.service:hover {
   cursor: none;
   top: -10px;
 }
 
-.card img {
+.service img {
   max-width: 100%;
 }
 
-.card__image-container {
+.service__image-container {
   margin: -2rem -2rem 1rem -2rem;
 }
 
-.card__line {
+.service__line {
   opacity: 0;
   -webkit-animation: LineFadeIn .8s .8s forwards ease-in;
           animation: LineFadeIn .8s .8s forwards ease-in;
 }
 
-.card__image {
+.service__image {
   opacity: 0;
   -webkit-animation: ImageFadeIn .8s 1.4s forwards;
           animation: ImageFadeIn .8s 1.4s forwards;
 }
 
-.card__title {
+.service__title {
   color: #FFFFFF;
   margin-top: 0;
   font-weight: 800;
   letter-spacing: 0.01em;
 }
 
-.card__content {
+.service__content {
   margin-top: 1rem;
   opacity: 0;
   -webkit-animation: ContentFadeIn .8s 1.6s forwards;
           animation: ContentFadeIn .8s 1.6s forwards;
 }
 
-.card__svg {
+.service__svg {
   position: absolute;
   left: 0;
   top: 40px;
@@ -254,5 +233,53 @@ article {
     -webkit-filter: blur(0);
             filter: blur(0);
   }
+}
+
+.card {
+  width: 100%;
+  -webkit-filter: brightness(0.6);
+          filter: brightness(0.6);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.card:hover {
+  -webkit-filter: brightness(1);
+          filter: brightness(1);
+}
+
+.card .card-img {
+  width: 100%;
+}
+
+.name {
+  color: #FFFFFF;
+}
+
+.position {
+  color: #FFFFFF;
+  font-style: italic;
+  font-size: 14px;
+}
+
+article {
+  text-indent: 30px;
+  color: #FFFFFF;
+  line-height: 1.9em;
+  text-align: justify;
+  font-size: 17px;
+}
+
+.icon {
+  width: 35px;
+  height: 35px;
+  margin-right: 14px;
+  margin-bottom: 20px;
+}
+
+.icon:hover {
+  opacity: 0.8;
+  -webkit-transform: scale(1.13);
+          transform: scale(1.13);
 }
 /*# sourceMappingURL=index.css.map */
