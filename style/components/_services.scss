@@ -1,4 +1,6 @@
 .card {
+  position: relative;
+  top: 0;
   background: #333;
   height: 75vh;
   border-radius: 6px;
@@ -6,6 +8,12 @@
   color: $light;
   box-shadow: 0 .25rem .25rem rgba(0,0,0,0.2),0 0 1rem rgba(0,0,0,0.2);
   overflow: hidden;
+  transition: top ease 0.5s;
+
+  &:hover {
+    cursor: none;
+    top: -10px;
+  }
 
   img {
     max-width: 100%;

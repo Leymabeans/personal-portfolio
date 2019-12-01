@@ -60,10 +60,6 @@ article {
   fill: #0D1317;
 }
 
-h1, p {
-  color: #ffffff;
-}
-
 .progress-container {
   position: fixed;
   top: 0;
@@ -79,7 +75,24 @@ h1, p {
   width: 0%;
 }
 
+.wrapper {
+  position: absolute;
+  top: 30%;
+  color: #FFFFFF;
+}
+
+.wrapper h1 {
+  font-size: 130px;
+  font-weight: bold;
+}
+
+.wrapper p {
+  margin-top: 15px;
+}
+
 .card {
+  position: relative;
+  top: 0;
   background: #333;
   height: 75vh;
   border-radius: 6px;
@@ -88,6 +101,13 @@ h1, p {
   -webkit-box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2), 0 0 1rem rgba(0, 0, 0, 0.2);
           box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2), 0 0 1rem rgba(0, 0, 0, 0.2);
   overflow: hidden;
+  -webkit-transition: top ease 0.5s;
+  transition: top ease 0.5s;
+}
+
+.card:hover {
+  cursor: none;
+  top: -10px;
 }
 
 .card img {
