@@ -1,6 +1,7 @@
 body {
   background-color: $dark;
-  font-family: 'Open Sans', sans-serif;
+  font-family: $family;
+  box-sizing: border-box;;
   padding: 0;
   margin: 0;
   text-align: center;
@@ -13,26 +14,13 @@ body {
 
 .heading {
   padding: 150px 0px 80px 0px;
-}
 
-.button {
-  outline: none;
-  border: none;
-  padding: 15px;
-  margin: auto;
-}
+  h1 {
+    font-weight: $bold;
+    color: $light;
+  }
 
-.position {
-  font-style: italic;
-  font-size: 14px;
-}  
-
-.description {
-  line-height: 1.9em;
-  text-align: justify;
-  font-size: 17px;
-}
-
-article {
-  text-indent: 30px;
+  h4 {
+    color: $light * 0.5;
+  }
 }

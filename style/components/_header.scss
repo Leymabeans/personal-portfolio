@@ -13,17 +13,29 @@
   }
 }
 
-.wrapper{
+.intro{
   position: absolute;
   top: 30%;
   color: $light;
 
   h1 {
     font-size: 130px;
-    font-weight: bold;
+    font-weight: $bold;
   }
 
   p {
-    margin-top: 15px;
+    font-size: 18px;
+  }
+
+  .button {
+    background-color: $primary * 0.7;
+    outline: none;
+    border: none;
+    padding: 20px 35px;
+    margin: 25px auto;
+  
+    &:hover {
+      background-color: $primary;
+    }
   }
 }
