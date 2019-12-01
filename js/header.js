@@ -1,13 +1,12 @@
-//Variables------------------
-var canvas = document.getElementById('header');
+//Variables-----------
+var canvas = document.querySelector('canvas');
 var c = canvas.getContext('2d');
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
-maxRadius = 40;
-minRadius = 2;
+var maxRadius = 40;
 var circleArray = [];
 var colorArray = [
-  '#FFFFFF',
+  '#C9DAE',
   '#03F7EE', 
   '#00B295', 
   '#191516', 
@@ -18,13 +17,16 @@ var mouse = {
 }
 
 
-//Establish circle-----------
+
+//Establish circle structure---------------------
 function Circle(x, y, dx, dy, radius) {
+  //Circle variables
   this.x = x;
   this.y = y;
   this.dx = dx;
   this.dy = dy;
   this.radius = radius;
+  this.minRadius = radius;
   this.color = colorArray[Math.floor(Math.random() * colorArray.length)];
 
   //Draw circles
@@ -37,6 +39,7 @@ function Circle(x, y, dx, dy, radius) {
 
   //Check parameters
   this.update = function() {
+    //Contain circles in the screen
     if(this.x + this.radius > innerWidth || this.x - this.radius < 0) {
       this.dx = -this.dx;
     }
@@ -46,12 +49,15 @@ function Circle(x, y, dx, dy, radius) {
     this.x += this.dx;
     this.y += this.dy;
 
+    //Grow circles if mouse is close
     if (mouse.x - this.x < 50 && mouse.x - this.x > -50 && mouse.y - this.y < 50 && mouse.y - this.y > -50) {
       if (this.radius < maxRadius) {
         this.radius += 1;
       }
     }
-    else if (this.radius > minRadius) {
+
+    //Shrink to original size if no mouse
+    else if (this.radius > this.minRadius) {
       this.radius -= 1;
     }
 
@@ -60,19 +66,24 @@ function Circle(x, y, dx, dy, radius) {
 }
 
 
-//Create 600 circles---------
-for(var i=0; i < 600; i++) {
+
+//Create circles, new ones on page resize--------
+function init() {
+  circleArray = [];
+  for(var i=0; i < 500; i++) {
   var x = Math.random() * (innerWidth - radius * 2) + radius;
   var y = Math.random() * (innerHeight - radius * 2) + radius;
   var dx = (Math.random() - 0.5) * 2;
   var dy = (Math.random() - 0.5) * 2;
-  var radius = Math.random() * 3 + 1;
+  var radius = Math.random() * 4 + 1;
   var color = 'rgba(255, 0, 0, 0.9)';
   circleArray.push(new Circle(x, y, dx, dy, radius));
+  }
 }
 
 
-//Animate circles------------------
+
+//Animate circles, add all circles to array------
 function animate() {
   requestAnimationFrame(animate);
   c.clearRect(0, 0, innerWidth, innerHeight);
@@ -81,12 +92,24 @@ function animate() {
     circleArray[i].update();
   }
 }
-animate();
 
 
-//Mouse Over-----------------
+
+//Grow circles everytime mouse moves-------------
 window.addEventListener('mousemove', function(event) {
   mouse.x = event.x;
   mouse.y = event.y;
-  console.log(mouse.x);
 });
+
+//Change canvas width when on page resize--------
+window.addEventListener('resize', function() {
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+  init();
+});
+
+
+
+//Functions to create circles and animate--------
+init();
+animate();
