@@ -13,7 +13,7 @@ body {
 }
 
 .heading {
-  padding: 150px 0px 80px 0px;
+  padding: 200px 0px 80px 0px;
 
   h1 {
     font-weight: $bold;
@@ -22,5 +22,14 @@ body {
 
   h4 {
     color: $light * 0.5;
+  }
+}
+
+.partner {
+  width: 100%;
+  filter: grayscale(0%);
+
+  &:hover {
+    filter: grayscale(100%);
   }
 }
