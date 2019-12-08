@@ -28,6 +28,10 @@ body {
 .space {
   padding-top: 40px;
   padding-bottom: 90px;
+  
+  h1, h2, h3, h4, p {
+    color: $light;
+  }
 }
 
 .screenshot {
