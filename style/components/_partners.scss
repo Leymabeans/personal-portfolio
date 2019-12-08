@@ -1,0 +1,8 @@
+.partner {
+  width: 100%;
+  filter: grayscale(0%);
+
+  &:hover {
+    filter: grayscale(100%);
+  }
+}

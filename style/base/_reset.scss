@@ -25,11 +25,11 @@ body {
   }
 }
 
-.partner {
-  width: 100%;
-  filter: grayscale(0%);
+.space {
+  padding-top: 40px;
+  padding-bottom: 90px;
+}
 
-  &:hover {
-    filter: grayscale(100%);
-  }
+.screenshot {
+  height: 70vh;
 }
