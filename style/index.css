@@ -32,6 +32,10 @@ body {
   padding-bottom: 90px;
 }
 
+.space h1, .space h2, .space h3, .space h4, .space p {
+  color: #FFFFFF;
+}
+
 .screenshot {
   height: 70vh;
 }
