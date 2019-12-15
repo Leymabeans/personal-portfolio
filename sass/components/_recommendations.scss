@@ -1,3 +1,4 @@
+//Make person's name and position match color scheme
 .name {
   color: $light;
 } 
@@ -8,6 +9,7 @@
   font-size: 14px;
 }  
 
+//Make recommendation format as a paragraph
 article {
   text-indent: 30px;
   color: $light;

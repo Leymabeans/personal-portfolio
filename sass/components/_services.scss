@@ -1,3 +1,4 @@
+//Make service look like a card
 .service {
   position: relative;
   top: 0;
@@ -10,10 +11,12 @@
   overflow: hidden;
   transition: top ease 0.5s;
 
+  //Moves up on hover
   &:hover {
     top: -10px;
   }
 
+  //Makes image fit correctly
   .image-container {
     margin: -2rem -2rem 1rem -2rem;
 
@@ -25,6 +28,7 @@
     }
   }
 
+  //Creates wavy divider
   svg {
     position: absolute;
     left: 0;
@@ -36,6 +40,7 @@
     }
   }
 
+  //Positions card content
   .content {
     margin-top: -2rem;
     opacity: 0;
