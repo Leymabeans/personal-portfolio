@@ -32,11 +32,11 @@ body {
 
 .heading h1 {
   font-weight: 700;
-  color: #FFFFFF;
+  color: 100;
 }
 
 .heading h4 {
-  color: gray;
+  color: 50;
 }
 
 .space {
@@ -45,41 +45,11 @@ body {
 }
 
 .space h1, .space h2, .space h3, .space h4, .space p {
-  color: #FFFFFF;
+  color: 100;
 }
 
 .screenshot {
   height: 70vh;
-}
-
-.progress-container {
-  position: fixed;
-  top: 0;
-  z-index: 1;
-  width: 100%;
-  height: 8px;
-  background: #0D1317;
-}
-
-.progress-container .progress-bar {
-  height: 8px;
-  background-color: #03F7EE;
-  width: 0%;
-}
-
-.intro {
-  position: absolute;
-  top: 30%;
-  color: #FFFFFF;
-}
-
-.intro h1 {
-  font-size: 8rem;
-  font-weight: 700;
-}
-
-.intro p {
-  font-size: 1.3rem;
 }
 
 .service {
@@ -89,7 +59,7 @@ body {
   height: 65vh;
   border-radius: 6px;
   padding: 2rem;
-  color: #FFFFFF;
+  color: 100;
   -webkit-box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2), 0 0 1rem rgba(0, 0, 0, 0.2);
           box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2), 0 0 1rem rgba(0, 0, 0, 0.2);
   overflow: hidden;
@@ -133,7 +103,7 @@ body {
 }
 
 .service .content .title {
-  color: #FFFFFF;
+  color: 100;
   margin-top: 0;
   font-weight: 700;
   letter-spacing: 0.01em;
@@ -143,7 +113,7 @@ body {
   0% {
     opacity: 0;
     d: path("M 0 300 Q 0 300 0 300 Q 0 300 0 300 C 0 300 0 300 0 300 Q 0 300 0 300 ");
-    stroke: #FFFFFF;
+    stroke: 100;
   }
   50% {
     opacity: 1;
@@ -161,7 +131,7 @@ body {
   0% {
     opacity: 0;
     d: path("M 0 300 Q 0 300 0 300 Q 0 300 0 300 C 0 300 0 300 0 300 Q 0 300 0 300 ");
-    stroke: #FFFFFF;
+    stroke: 100;
   }
   50% {
     opacity: 1;
@@ -277,21 +247,51 @@ body {
 }
 
 .name {
-  color: #FFFFFF;
+  color: 100;
 }
 
 .position {
-  color: #FFFFFF;
+  color: 100;
   font-style: italic;
   font-size: 14px;
 }
 
 article {
   text-indent: 30px;
-  color: #FFFFFF;
+  color: 100;
   line-height: 1.9em;
   text-align: justify;
   font-size: 17px;
+}
+
+.progress-container {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  height: 8px;
+  background: #0D1317;
+}
+
+.progress-container .progress-bar {
+  height: 8px;
+  background-color: #03F7EE;
+  width: 0%;
+}
+
+.intro {
+  position: absolute;
+  top: 30%;
+  color: 100;
+}
+
+.intro h1 {
+  font-size: 8rem;
+  font-weight: 700;
+}
+
+.intro p {
+  font-size: 1.3rem;
 }
 
 .icon {
