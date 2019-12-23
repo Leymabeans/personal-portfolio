@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/nathanleysgit/nathan-ley/master/assets/github-title.jpg" height="400" width="450"/>
+  <img src="https://raw.githubusercontent.com/nathanleysgit/nathan-ley/master/media/github-title.jpg" height="400" width="450"/>
 </p>
 
 ## Content
