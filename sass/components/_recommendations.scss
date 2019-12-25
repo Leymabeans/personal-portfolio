@@ -6,14 +6,14 @@
 .position {
   color: $light;
   font-style: italic;
-  font-size: 14px;
+  font-size: 0.8rem;
 }  
 
 //Make recommendation format as a paragraph
 article {
-  text-indent: 30px;
+  text-indent: 3rem;
   color: $light;
-  line-height: 1.9em;
+  line-height: 1.9rem;
   text-align: justify;
-  font-size: 17px;
+  font-size: 1rem;
 }
