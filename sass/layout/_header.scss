@@ -1,0 +1,30 @@
+.progress-container {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  height: 0.3rem;
+  background: $dark;
+  left: -1px;
+
+  .progress-bar {
+    height: 0.3rem;
+    background-color: $primary;
+    width: 0%;
+  }
+}
+
+.intro{
+  position: absolute;
+  top: 30%;
+  color: $light;
+
+  h1 {
+    font-size: 8rem;
+    font-weight: $bold-font;
+  }
+
+  p {
+    font-size: 1.1rem;
+  }
+}
