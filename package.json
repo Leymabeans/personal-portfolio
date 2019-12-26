@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "scss": "node-sass --watch sass/scss -o css/css"
+    "scss": "node-sass --watch sass/index.scss -o css/index.css"
   },
   "repository": {
     "type": "git",
@@ -20,7 +20,9 @@
     "bootstrap": "^4.4.1",
     "gulp": "^4.0.2",
     "jquery": "^3.4.1",
-    "node-sass": "^4.13.0",
     "popper.js": "^1.16.0"
+  },
+  "devDependencies": {
+    "node-sass": "^4.13.0"
   }
 }
