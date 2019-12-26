@@ -1,11 +1,10 @@
 {
   "name": "personal-portfolio",
-  "version": "1.0.0",
-  "description": "Personal Portfolio",
+  "version": "3.1.0",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "scss": "sass --watch scss -o css"
+    "scss": "node-sass --watch sass/scss -o css/css"
   },
   "repository": {
     "type": "git",
@@ -21,7 +20,7 @@
     "bootstrap": "^4.4.1",
     "gulp": "^4.0.2",
     "jquery": "^3.4.1",
-    "popper.js": "^1.16.0",
-    "sass": "^1.24.0"
+    "node-sass": "^4.13.0",
+    "popper.js": "^1.16.0"
   }
 }
