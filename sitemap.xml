@@ -1,37 +1,21 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-
-<url>
-  <loc>https://www.nathan-ley.com/</loc>
-  <lastmod>2019-12-10T22:56:23+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://www.nathan-ley.com/projects/ello-consulting.html</loc>
-  <lastmod>2019-12-09T23:25:54+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.nathan-ley.com/projects/saint-alm.html</loc>
-  <lastmod>2019-12-09T23:25:55+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.nathan-ley.com/projects/lame-games.html</loc>
-  <lastmod>2019-12-09T23:25:55+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.nathan-ley.com/projects/fuzion-data.html</loc>
-  <lastmod>2019-12-09T23:25:54+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-
-
+<?xml version="1.0" encoding="utf-8"?>
+<!--Created using XmlSitemapGenerator.org - Free HTML, RSS and XML sitemap generator-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+  <url>
+    <loc>http://nathan-ley.com/</loc>
+  </url>
+  <url>
+    <loc>http://nathan-ley.com/work/ello-consulting.html</loc>
+  </url>
+  <url>
+    <loc>http://nathan-ley.com/work/lame-games.html</loc>
+  </url>
+  <url>
+    <loc>http://nathan-ley.com/work/saint-alm.html</loc>
+  </url>
+  <url>
+    <loc>http://nathan-ley.com/work/fuzion-data.html</loc>
+  </url>
 </urlset>
+<!--<guid value="8cc5ab21-7e39-4002-adae-f08bff5a5506" />-->
+<!--Created using XmlSitemapGenerator.org - Free HTML, RSS and XML sitemap generator-->
