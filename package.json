@@ -1,0 +1,28 @@
+{
+  "name": "personal-portfolio",
+  "version": "1.0.0",
+  "description": "<p align=\"center\">\r   <img src=\"https://raw.githubusercontent.com/nathanleysgit/nathan-ley/master/media/github-title.jpg\" height=\"400\" width=\"450\"/>\r </p>",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "prod": "parcel build src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NathanLeysGit/nathan-ley.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NathanLeysGit/nathan-ley/issues"
+  },
+  "homepage": "https://github.com/NathanLeysGit/nathan-ley#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  },
+  "dependencies": {
+    "jquery": "^3.4.1",
+    "popper.js": "^1.16.0"
+  }
+}
