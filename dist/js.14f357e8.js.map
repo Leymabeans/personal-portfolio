@@ -1,0 +1,1 @@
+{"version":3,"sources":["js/index.js"],"names":["goBack","window","history","back"],"mappings":";AAAA,SAASA,IACPC,OAAOC,QAAQC","file":"js.14f357e8.js","sourceRoot":"..\\src","sourcesContent":["function goBack() {\r\n  window.history.back();\r\n}"]}
