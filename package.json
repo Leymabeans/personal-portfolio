@@ -1,8 +1,8 @@
 {
   "name": "personal-portfolio",
-  "version": "1.0.0",
-  "description": "<p align=\"center\">\r   <img src=\"https://raw.githubusercontent.com/nathanleysgit/nathan-ley/master/media/github-title.jpg\" height=\"400\" width=\"450\"/>\r </p>",
-  "main": "index.js",
+  "version": "4.0.0",
+  "description": "<p align=\"center\">\r   <img src=\"https://raw.githubusercontent.com/nathanleysgit/nathan-ley/master/src/img/github-title.jpg\" height=\"400\" width=\"450\"/>\r </p>",
+  "main": "src/js/index.js",
   "scripts": {
     "dev": "parcel src/index.html",
     "prod": "parcel build src/index.html"
@@ -12,13 +12,14 @@
     "url": "git+https://github.com/NathanLeysGit/nathan-ley.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Nathan Ley",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/NathanLeysGit/nathan-ley/issues"
   },
   "homepage": "https://github.com/NathanLeysGit/nathan-ley#readme",
   "devDependencies": {
+    "node-sass": "^4.13.0",
     "parcel-bundler": "^1.12.4"
   },
   "dependencies": {

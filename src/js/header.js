@@ -70,12 +70,12 @@ function Circle(x, y, dx, dy, radius) {
 //Create circles, new ones on page resize--------
 function init() {
   circleArray = [];
-  for(var i=0; i < 500; i++) {
+  for(var i=0; i < 300; i++) {
   var x = Math.random() * (innerWidth - radius * 2) + radius;
   var y = Math.random() * (innerHeight - radius * 2) + radius;
   var dx = (Math.random() - 0.5) * 2;
   var dy = (Math.random() - 0.5) * 2;
-  var radius = Math.random() * 4 + 1;
+  var radius = Math.random() * 7 + 1;
   var color = 'rgba(255, 0, 0, 0.9)';
   circleArray.push(new Circle(x, y, dx, dy, radius));
   }

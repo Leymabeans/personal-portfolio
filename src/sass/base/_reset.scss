@@ -13,7 +13,7 @@ body {
 }
 
 .button {
-  background-color: $primary * 0.7;
+  background-color: $primary;
   outline: none;
   border: none;
   padding: 20px 35px;
@@ -33,7 +33,7 @@ body {
   }
 
   h4 {
-    color: $light * 0.5;
+    color: $light;
   }
 }
 
