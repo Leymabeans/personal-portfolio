@@ -8,8 +8,20 @@ body {
   overflow-x: hidden;
 }
 
-::-webkit-scrollbar { 
-  display: none; 
+::-webkit-scrollbar {
+  width: 0.8rem;
+}
+
+::-webkit-scrollbar-track {
+  background: $light; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: $dark;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: $card-back;
 }
 
 .button {
