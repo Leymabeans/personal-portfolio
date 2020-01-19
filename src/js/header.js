@@ -6,10 +6,8 @@ canvas.height = window.innerHeight;
 var maxRadius = 40;
 var circleArray = [];
 var colorArray = [
-  '#C9DAE',
   '#03F7EE', 
   '#00B295', 
-  '#191516', 
   '#AB2346'
 ];
 var mouse = {
@@ -70,12 +68,12 @@ function Circle(x, y, dx, dy, radius) {
 //Create circles, new ones on page resize--------
 function init() {
   circleArray = [];
-  for(var i=0; i < 300; i++) {
+  for(var i=0; i < 150; i++) {
   var x = Math.random() * (innerWidth - radius * 2) + radius;
   var y = Math.random() * (innerHeight - radius * 2) + radius;
-  var dx = (Math.random() - 0.5) * 2;
-  var dy = (Math.random() - 0.5) * 2;
-  var radius = Math.random() * 7 + 1;
+  var dx = (Math.random() - 0.5) * 1.3;
+  var dy = (Math.random() - 0.5) * 1.3;
+  var radius = Math.random() * 13 + 6;
   var color = 'rgba(255, 0, 0, 0.9)';
   circleArray.push(new Circle(x, y, dx, dy, radius));
   }
