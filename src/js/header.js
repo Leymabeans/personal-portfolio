@@ -16,6 +16,7 @@ var mouse = {
 
 
 
+
 //Establish circle structure---------------------
 function Circle(x, y, dx, dy, radius) {
   //Circle variables
@@ -65,8 +66,9 @@ function Circle(x, y, dx, dy, radius) {
 
 
 
-//Create circles, new ones on page resize--------
-function init() {
+
+//Create circles for regular screens-------------
+function init_computer() {
   circleArray = [];
   for(var i=0; i < 150; i++) {
   var x = Math.random() * (innerWidth - radius * 2) + radius;
@@ -80,6 +82,22 @@ function init() {
 }
 
 
+//Create circles for mobile screens--------------
+function init_mobile() {
+  circleArray = [];
+  for(var i=0; i < 60; i++) {
+  var x = Math.random() * (innerWidth - radius * 2) + radius;
+  var y = Math.random() * (innerHeight - radius * 2) + radius;
+  var dx = (Math.random() - 0.5) * 1.1;
+  var dy = (Math.random() - 0.5) * 1.1;
+  var radius = Math.random() * 12 + 5;
+  var color = 'rgba(255, 0, 0, 0.9)';
+  circleArray.push(new Circle(x, y, dx, dy, radius));
+  }
+}
+
+
+
 
 //Animate circles, add all circles to array------
 function animate() {
@@ -90,6 +108,19 @@ function animate() {
     circleArray[i].update();
   }
 }
+
+ //function for screen resize
+ function screen_size() {
+  var h = parseInt(window.innerHeight);
+  var w = parseInt(window.innerWidth);
+  if(w <= 768) {
+    init_mobile();
+  } 
+  if(w > 768) {
+    init_computer();
+  }
+}
+
 
 
 
@@ -103,11 +134,12 @@ window.addEventListener('mousemove', function(event) {
 window.addEventListener('resize', function() {
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
-  init();
+  screen_size();
 });
 
 
 
+
 //Functions to create circles and animate--------
-init();
+screen_size();
 animate();
