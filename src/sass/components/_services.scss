@@ -2,10 +2,11 @@
   color: $light;
   background-color: $card-back;
   margin-bottom: 2rem;
-  transition: top ease 0.5s;
+  transition: color ease 0.5s;
 
   &:hover {
-    top: -10px;
+    color: $light * 0.8;
+    cursor: pointer;
   }
 
   .card-img-top {
