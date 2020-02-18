@@ -19,8 +19,9 @@
   },
   "homepage": "https://github.com/NathanLeysGit/nathan-ley#readme",
   "devDependencies": {
-    "node-sass": "^4.13.0",
-    "parcel-bundler": "^1.12.4"
+    "node-sass": "^4.13.1",
+    "parcel-bundler": "^1.12.4",
+    "typescript": "^3.7.5"
   },
   "dependencies": {
     "jquery": "^3.4.1",
